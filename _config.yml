@@ -1,3 +1,7 @@
 exclude: ['README.md']
-timezone: US/Eastern
+timezone: GMT
 markdown: kramdown
+defaults:
+  -
+    values:
+      layout: "edi"
