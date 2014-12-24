@@ -6,28 +6,45 @@ title: Machine translation
 active_tab: main_page 
 ---
 
-Machine Translation (2014)
-==========================
+Machine Translation
+-------------------
 
-[Google translate](https://translate.google.com/) instantly 
-translates between any pair of over eighty human languages like French and 
-English. How does it do that? Why does it make the errors that it does? And 
-how can you build something better? Modern translation systems like Google 
-Translate, [Bing Translator](http://www.bing.com/translator/), 
+[Google translate](http://translate.google.com/) instantly
+translates between any pair of over eighty human languages 
+like French and English. How does it do that? Why does it 
+make the errors that it does? And how can you build something 
+better? Modern translation systems like Google Translate, 
+[Bing Translator](http://www.microsofttranslator.com/),
 and [SDL FreeTranslation](http://www.freetranslation.com/)
-*learn* to translate by reading millions of words of already translated text. 
-This course will show you how they work. We cover fundamental building 
-blocks from linguistics, machine learning, algorithms, data structures, 
-and formal language theory, showing how they apply to a difficult real-word 
-artificial intelligence problem.
+*learn* to translate by reading millions of words of already 
+translated text. This course will show you how they work. 
+We cover fundamental building blocks from linguistics, 
+machine learning, algorithms, data structures, and formal 
+language theory, showing how they apply to a real and difficult
+problem in artificial intelligence.
 
-* [Teaching Staff](staff.html)
-* [Time and Place](timeandplace.html)
-* [Assessment](assessment.html)
-* [Lectures](lectures.html)
-* [Assignments](assignments.html)
-* [Reading List](reading.html)
+Time 
+: Monday &amp; Thursday, 16:10&ndash;17:00 
 
+Location
+: 16-20 George Square, room G.02
 
-### Course Overview
+Lecturer
+: [Adam Lopez](http://homepages.inf.ed.ac.uk/alopez/)
 
+Discussion Forum
+: [Piazza](https://piazza.com/class/i41modx5uu93jz)
+
+Office hours
+: TBD
+
+Textbook
+: [Statistical Machine Translation](http://www.statmt.org/book/) 
+(<a href="http://statmt.org/book/errata.html">errata</a>) 
+by [Philipp Koehn](http://www.cs.jhu.edu/~phi/).
+You can loan it or [read it online](http://edin.ac/1xIEjYi) through the 
+University library.
+
+Assessment
+: * Three practical assignments (10% each)
+* Final exam (70%)
