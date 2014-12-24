@@ -1,6 +1,6 @@
 past:
   -
-    date: 2014-01-28
+    date: 2015-01-12
     title: Introduction
     lecturer: All
     slides: http://www.slideshare.net/alopezfoo/jhu-mt-lecture2014012 
@@ -23,6 +23,7 @@ past:
         title: Translation
         url: http://www.stanford.edu/~mjkay/CurrentState.pdf
         optional: true
+future:
   -
     date: 2014-01-30
     title: Probability and Language Models 
@@ -34,7 +35,7 @@ past:
         title: chapters 2 and 7 
   -
     date: 2014-02-04
-    title: Learning Translation Models&colon; Word Alignment
+    title: Learning Translation Models&#58; Word Alignment
     slides: http://cs.jhu.edu/~post/mt-class/2014/mt-class-2014-02-04.pdf
     reading:
       -
@@ -46,7 +47,7 @@ past:
         url: http://www.isi.edu/natural-language/mt/wkbk.rtf
       -
         author: Collins
-        title: Statistical Machine Translation&colon; IBM Models 1 and 2
+        title: Statistical Machine Translation&#58; IBM Models 1 and 2
         url: http://www.cs.columbia.edu/~mcollins/courses/nlp2011/notes/ibm12.pdf
       -
         author: Brown et al.
@@ -65,7 +66,7 @@ past:
         title: chapter 4
       -
         author: Brown et al.
-        title: The Mathematics of Statical Machine Translation&colon; Parameter Estimation
+        title: The Mathematics of Statical Machine Translation&#58; Parameter Estimation
         url: http://aclweb.org/anthology-new/J/J93/J93-2003.pdf
         optional: true
       -
@@ -156,7 +157,7 @@ past:
       -
         author: Papineni et al.
         url: http://aclweb.org/anthology-new/P/P02/P02-1040.pdf
-        title: Bleu&colon; a Method for Automatic Evaluation of Machine Translation
+        title: Bleu&#58; a Method for Automatic Evaluation of Machine Translation
         optional: true
       -
         author: Callison-Burch et al.
@@ -220,7 +221,7 @@ past:
     title: Spring Break
   -
     date: 2014-03-25
-    title: Syntax-based Translation Part 1&colon; Reordering for Phrase-Based Translation
+    title: Syntax-based Translation Part 1&#58; Reordering for Phrase-Based Translation
     slides: http://cs.jhu.edu/~post/mt-class/2014/mt-class-2014-03-25-syntactic-reordering.pdf
     reading:
       -
@@ -238,7 +239,7 @@ past:
         optional: true
   -
     date: 2014-03-27
-    title: Syntax-Based Translation Part 2&colon; Synchronous Grammars
+    title: Syntax-Based Translation Part 2&#58; Synchronous Grammars
     slides: http://cs.jhu.edu/~post/mt-class/2014/mt-class-2014-03-27-synchronous-grammars.pdf
     reading:
       -
@@ -256,7 +257,7 @@ past:
         optional: true
   -
     date: 2014-04-01
-    title: Syntax-Based Translation Part 3&colon; Decoding as Parsing
+    title: Syntax-Based Translation Part 3&#58; Decoding as Parsing
     slides: http://cs.jhu.edu/~post/mt-class/2014/mt-class-2014-04-01-syntax-based-decoding.pdf
     reading:
       -

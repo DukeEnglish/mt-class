@@ -1,10 +1,15 @@
 ---
-layout: default
 img: do_not_want
 img_link: http://winterson.com/2005/06/episode-iii-backstroke-of-west.html
-title: Syllabus
+title: MT | Syllabus
 active_tab: syllabus
 ---
+
+This syllabus currently contains lectures from the 2014 
+[machine translation course](http://mt-class.org/jhu/) at 
+Johns Hopkins University. We will cover much of the same
+material, with some omissions and changes. Check back 
+soon for updates!
 
 <table class="table table-striped"> 
   <tbody>
