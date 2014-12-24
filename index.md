@@ -24,7 +24,7 @@ language theory, showing how they apply to a real and difficult
 problem in artificial intelligence.
 
 Time 
-: Monday &amp; Thursday, 16:10&ndash;17:00 
+: Monday & Thursday, 16:10 to 17:00 
 
 Location
 : 16-20 George Square, room G.02
