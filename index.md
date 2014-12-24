@@ -33,7 +33,7 @@ Lecturer
 : [Adam Lopez](http://homepages.inf.ed.ac.uk/alopez/)
 
 Discussion Forum
-: [Piazza](https://piazza.com/class/i41modx5uu93jz)
+: [Piazza](https://piazza.com/ed.ac.uk/spring2015/infr11062/home)
 
 Office hours
 : TBD
