@@ -4,4 +4,4 @@ markdown: kramdown
 defaults:
   -
     values:
-      layout: "edi"
+      layout: "local"
