@@ -1,9 +1,17 @@
 <!--#include virtual="/ssi/doctype.inc"-->
 <title>{{ page.title }}</title>
 <!--#include virtual="/cgi-bin/metabase"-->
+
+<!-- CSS/jquery/MathJax -->
+<link href="./assets/css/tw-bs.3.1.1.css" rel="stylesheet">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
 <!--#include virtual="/ssi/header.inc"-->
 
+<div class="tw-bs">
 {{ content }}
+</div>
 
 <!--#include virtual="/cgi-bin/locationbar"-->
 <!--#include virtual="/ssi/footer.inc"-->
