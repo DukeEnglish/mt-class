@@ -3,7 +3,6 @@ past:
     date: 2015-01-12
     title: Introduction
     lecturer: All
-    slides: http://www.slideshare.net/alopezfoo/jhu-mt-lecture2014012 
     reading:
       -
         author: Koehn 
@@ -12,16 +11,6 @@ past:
         author: Knight
         title:  Automating Knowledge Acquisition for Machine Translation
         url: http://www.isi.edu/natural-language/mt/aimag97.pdf
-        optional: true
-      -
-        author: Weaver
-        title: Translation
-        url: http://www.mt-archive.info/Weaver-1949.pdf
-        optional: true
-      -
-        author: Kay
-        title: Translation
-        url: http://www.stanford.edu/~mjkay/CurrentState.pdf
         optional: true
 future:
   -

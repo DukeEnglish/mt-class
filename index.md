@@ -6,9 +6,6 @@ title: Machine translation
 active_tab: main_page 
 ---
 
-Machine Translation
--------------------
-
 [Google translate](http://translate.google.com/) instantly
 translates between any pair of over eighty human languages 
 like French and English. How does it do that? Why does it 
@@ -32,19 +29,24 @@ Location
 Lecturer
 : [Adam Lopez](http://homepages.inf.ed.ac.uk/alopez/)
 
-Discussion Forum
-: [Piazza](https://piazza.com/ed.ac.uk/spring2015/infr11062/home)
-
 Office hours
 : TBD
+
+Discussion Forum
+: [Piazza](https://piazza.com/ed.ac.uk/spring2015/infr11062/home)
 
 Textbook
 : [Statistical Machine Translation](http://www.statmt.org/book/) 
 (<a href="http://statmt.org/book/errata.html">errata</a>) 
 by [Philipp Koehn](http://www.cs.jhu.edu/~phi/).
-You can loan it or [read it online](http://edin.ac/1xIEjYi) through the 
-University library.
+Available [online](http://edin.ac/1xIEjYi) 
+or [on loan](http://edin.ac/1vf7H1i) from the University library.
+
+Course Descriptor
+: [INFR11062](http://www.drps.ed.ac.uk/14-15/dpt/cxinfr11062.htm) \| [MT](http://course.inf.ed.ac.uk/mt/)
 
 Assessment
 : * Three practical assignments (10% each)
 * Final exam (70%)
+
+

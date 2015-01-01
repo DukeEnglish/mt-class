@@ -5,18 +5,14 @@ title: MT | Syllabus
 active_tab: syllabus
 ---
 
-This syllabus currently contains lectures from the 2014 
-[machine translation course](http://mt-class.org/jhu/) at 
-Johns Hopkins University. We will cover much of the same
-material, with some omissions and changes. Check back 
-soon for updates!
+Check back soon for updates!
 
 <table class="table table-striped"> 
   <tbody>
     <tr>
       <th>Date</th>
       <th>Topic</th>
-      <th>Readings (starred=graduate level)</th>
+      <th>Readings (<span class="glyphicon glyphicon-star"></span> = optional)</th>
     </tr>
     {% for lecture in site.data.syllabus.past %}
     <tr>
@@ -38,8 +34,8 @@ soon for updates!
           <ul class="fa-ul">
           {% for reading in lecture.reading %}
             <li>
-            {% if reading.optional %}<i class="fa-li fa fa-star"> </i>
-            {% else %}<i class="fa-li fa"> </i> {% endif %}
+            {% if reading.optional %}<span class="glyphicon glyphicon-star"></span>
+            {% else %}{% endif %}
             {{ reading.author }},
             {% if reading.url %}
             <a href="{{ reading.url }}">{{ reading.title }}</a>
