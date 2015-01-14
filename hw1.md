@@ -14,8 +14,27 @@ active_tab: homework
 Alignment <span class="text-muted">| Homework 1</span>
 =============================================================
 
-Aligning words is a key task in machine translation. We start with
-a large _parallel corpus_ of aligned sentences. For example, we might
-have the following sentence pair from the proceedings of the bilingual 
-Canadian parliament:
+Word alignment is a fundamental problem in machine translation. We start with
+a large _parallel text_ of translated sentences. For example, our
+parallel text might contain the following translation:
+
+    Das Parlament erhebt sich zu einer Schweigeminute .  
+    The House rose and observed a minute ' s silence .
+
+Your task is to align the words of the sentences. Given the sentence pair
+above, you would ideally produce an alignment like this:
+
+| German            | | English                |
+|-------------------|-|------------------------|
+| 0. Das            | | 0. The                 |
+| 1. Parlament      | | 1. House               |
+| 2-3. erhebt sich  | | 2. rose                |
+| 4. zu             | |                        |
+|                   | | 3. and                 |
+|                   | | 4. observed            |
+| 5. einer          | | 5. a                   |
+| 6. Schweigeminute | | 6-8. minute 's silence |
+| 7. .              | | 9. .                   |
+
+Maybe you would also align *zu* to *rose*.
 
