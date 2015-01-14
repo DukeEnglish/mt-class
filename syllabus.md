@@ -5,6 +5,7 @@ title: MT | Syllabus
 active_tab: syllabus
 ---
 
+The syllabus will be adopted from [this course](http://mt-class.org/jhu). 
 Check back soon for updates!
 
 <table class="table table-striped"> 
