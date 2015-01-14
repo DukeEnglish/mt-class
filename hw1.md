@@ -1,13 +1,17 @@
 ---
-layout: default
 img: rosetta
-img_url: http://www.flickr.com/photos/calotype46/6683293633/
-caption: Rosetta stone (credit&#59; calotype46)
-title: Homework 1 | Alignment
+img_link: http://en.wikipedia.org/wiki/Rosetta_Stone 
+caption: Rosetta stone (image by flickr user calotype46)
+title: Alignment | Homework 1
 active_tab: homework
 ---
 
-Alignment <span class="text-muted">Challenge Problem 1</span>
+<div class="alert alert-danger">
+  This page is under revision. 
+  Wait until this message disappears before starting the assignment.
+</div>
+
+Alignment <span class="text-muted">| Challenge Problem 1</span>
 =============================================================
 
 Aligning words is a key task in machine translation. We start with
@@ -26,18 +30,6 @@ model we need alignments at the _word_ level. That's where you come
 in. **Your challenge is to write a program that aligns words 
 automatically.** For example, given the sentence above, your program
 would ideally output these pairs:
-
-*le -- the,
-droit -- fee,
-permis -- license,
-passe -- going,
-passe -- up,
-donc -- from,
-$ -- $,
-25 -- 25,
-à -- to,
-$ -- $,
-50 -- 50*
 
 Your program can leave words unaligned (e.g. *we* and *see*) or 
 multiply aligned (e.g. *passe* aligned to *going up*). It will be
@@ -83,7 +75,7 @@ This command stores the output in `dice.a`. To compute accuracy, run:
 This compares the alignments against human-produced alignments, computing 
 [alignment error rate](http://aclweb.org/anthology-new/P/P00/P00-1056.pdf), 
 which balances precision and recall. It will also show you the comparison 
-in a grid. Look at the terrible output of this heuristic method -- it's 
+in a grid. Look at the terrible output of this heuristic method. It's 
 better than chance, but not any good. Try training on 10,000 sentences:
 
     python align -n 10000 | python score-alignments 
