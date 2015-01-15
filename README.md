@@ -11,6 +11,7 @@ You are free to reuse it any way you like if you acknowledge that you got it fro
 * [Matt Post](http://www.cs.jhu.edu/~post), Johns Hopkins University
 * [Chris Callison-Burch](http://www.cis.upenn.edu/~ccb), University of Pennsylvania
 * [Chris Dyer](http://www.cs.cmu.edu/~cdyer), Carnegie Mellon University
+* [Anoop Sarkar](http://www.cs.sfu.ca/~anoop/), Simon Fraser University
 
 The current fork of these files is used to teach the 
 [machine translation course](http://www.inf.ed.ac.uk/teaching/courses/mt/)
