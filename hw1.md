@@ -57,7 +57,7 @@ our aligner computes the set of sentences that the word appears in. Then
 for every pair of English and German words, it computes the similarity of 
 their respective sets, and it aligns those pairs with similarity higher than 
 a threshold. The aligner computes sentence similarity with 
-[Dice’s coefficient](http://en.wikipedia.org/wiki/Dice's_coefficient/). 
+[Dice's coefficient](http://en.wikipedia.org/wiki/Dice's_coefficient/). 
 Given the co-occurence count
 $$C(e,f)$$ of words $$e$$ and $$f$$ in the parallel corpus, Dice's
 coefficient for each pair of words $$e_i, f_j$$ is:
@@ -98,7 +98,7 @@ Baseline: IBM Model 1
 ---------------------
 
 Your challenge is to improve the alignment error rate as much as possible. 
-It shouldn’t be hard: while our intuition about the coocurrence of words 
+It shouldn't be hard: while our intuition about the coocurrence of words 
 makes our aligner better than chance, it is still very crude. Among other 
 problems, you may have noticed that some words tend to spuriously align to 
 many other words in the translation. Perhaps you could add some heuristics 
