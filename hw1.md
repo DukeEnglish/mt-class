@@ -3,7 +3,7 @@ img: rosetta
 img_link: http://en.wikipedia.org/wiki/Rosetta_Stone 
 caption: Rosetta stone (image by flickr user calotype46)
 title: Alignment | Homework 1
-active_tab: homework
+active_tab: hw1 
 ---
 
 Alignment <span class="text-muted">| Homework 1</span>
