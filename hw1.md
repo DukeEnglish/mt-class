@@ -6,6 +6,11 @@ title: Alignment | Homework 1
 active_tab: hw1 
 ---
 
+<div class="alert alert-info">
+  This assignment is due January 29 at 4pm.
+</div>
+
+
 Alignment <span class="text-muted">| Homework 1</span>
 =============================================================
 

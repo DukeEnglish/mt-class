@@ -47,6 +47,9 @@ Course Descriptor
 
 Assessment
 : * Three practical assignments (10% each)
+   1. Alignment, due January 29
+   2. Decoding, due February 12
+   3. Reranking, due March 9
 * Final exam (70%)
 
 
