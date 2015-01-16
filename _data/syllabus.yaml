@@ -3,6 +3,7 @@ past:
   -
     date: 2015-01-12
     title: Introduction
+    slides: http://www.slideshare.net/alopezfoo/edinburgh-mt-lecture1
     lecturer: All
     reading:
       -
@@ -16,7 +17,7 @@ past:
   -
     date: 2015-01-15
     title: Probability and Language Models 
-    slides: http://www.slideshare.net/alopezfoo/jhu-mt-lecture20140130
+    slides: http://www.slideshare.net/alopezfoo/edinburgh-mt-lecture2-probability-and-language-models
     lecturer: Lopez 
     reading:
       -
