@@ -306,7 +306,7 @@ Ground Rules
        self-documenting, and easy to use. 
 
 Your written work may be submitted in PDF, text, or markdown (like 
-[this website](https://github.com/alopez/mt-class). I will not accept
+[this website](https://github.com/alopez/mt-class)). I will not accept
 any other format. If you write the file in a different format, please
 convert it to one of the above prior to submission.
 
