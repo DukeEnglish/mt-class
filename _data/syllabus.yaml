@@ -4,7 +4,6 @@ past:
     date: 2015-01-12
     title: Introduction
     slides: http://www.slideshare.net/alopezfoo/edinburgh-mt-lecture1
-    lecturer: All
     reading:
       -
         author: Koehn 
@@ -18,19 +17,22 @@ past:
     date: 2015-01-15
     title: Probability and Language Models 
     slides: http://www.slideshare.net/alopezfoo/edinburgh-mt-lecture2-probability-and-language-models
-    lecturer: Lopez 
     reading:
       -
         author: Koehn 
         title: chapters 2 and 7 
   -
     date: 2015-01-19
-    title: Latent Variable Models&#58; Word Alignment
-    slides: http://cs.jhu.edu/~post/mt-class/2014/mt-class-2014-02-04.pdf
+    title: Latent Variable Models and Word Alignment
+    slides: http://www.slideshare.net/alopezfoo/edinburgh-mt-lecture3wordalignment
     reading:
       -
         author: Koehn 
         title: chapter 3
+      -
+        author: Lopez
+        title: Word Alignment and the Expectation Maximization Algorithm
+        url: http://edin.ac/1DH1C78 
       -
         author: Knight
         title: A Tutorial MT Workbook
@@ -39,7 +41,6 @@ past:
   -
     date: 2015-01-22
     title: Learning Better Translation Models
-    slides: http://cs.jhu.edu/~post/mt-class/2014/mt-class-2014-02-06.pdf
     reading:
       -
         author: Koehn 
@@ -62,7 +63,6 @@ past:
   -
     date: 2015-01-26
     title: Phrase-based translation
-    slides: http://www.slideshare.net/alopezfoo/jhu-mt-class-phrasebased-translation
     reading:
       -
         author: Koehn 
@@ -75,7 +75,6 @@ past:
   -
     date: 2015-01-29
     title: Stack decoding
-    slides: http://cs.jhu.edu/~post/mt-class/2014/mt-class-2014-02-25-stack-decoding.pdf
     links:
       -
         author: Koehn
@@ -83,15 +82,12 @@ past:
   -
     date: 2015-02-02
     title: Stack decoding continued
-    slides: http://cs.jhu.edu/~post/mt-class/2014/mt-class-2014-02-25-stack-decoding.pdf
   -
     date: 2015-02-05
     title: Automatic evaluation of machine translation
-    slides: http://www.slideshare.net/alopezfoo/jhu-mt-lecture20140303
   -
     date: 2015-02-09
     title: Feature-based models
-    slides: http://www.slideshare.net/alopezfoo/jhu-mt-class-featurebased-models
     reading:
       -
         author: Koehn
@@ -99,7 +95,6 @@ past:
   -
     date: 2015-02-12
     title: Loss-Sensitive Training of Feature-Based Models
-    slides: http://cs.jhu.edu/~post/mt-class/2014/mt-class-2014-03-11-mert.pdf
     reading:
       - 
         author: Todd Balf
@@ -116,7 +111,6 @@ past:
   -
     date: 2015-02-23
     title: Large-scale discriminative training of feature-based models
-    slides:  http://cs.jhu.edu/~post/mt-class/2014/2014-03-13-large-scale-training.pdf
     reading:
       - 
         author: Koehn
@@ -134,7 +128,6 @@ past:
   -
     date: 2015-02-26
     title: Syntax-based Translation
-    slides: http://cs.jhu.edu/~post/mt-class/2014/mt-class-2014-03-25-syntactic-reordering.pdf
     reading:
       -
         author: Chiang
@@ -152,7 +145,6 @@ past:
   -
     date: 2015-03-02
     title: Syntax-Based Translation Part 2&#58; Synchronous Grammars
-    slides: http://cs.jhu.edu/~post/mt-class/2014/mt-class-2014-03-27-synchronous-grammars.pdf
     reading:
       -
         author: Yamada and Knight
@@ -170,7 +162,6 @@ past:
   -
     date: 2015-03-05
     title: Translation with Weighted Automata
-    slides: http://www.slideshare.net/alopezfoo/jhu-mt-class-translation-with-weighted-automata
     reading: 
       -
         author: Knight and Al-Onaizan
@@ -189,7 +180,6 @@ past:
   -
     date: 2015-03-09
     title: Translation with Weighted Automata continued
-    slides: http://www.slideshare.net/alopezfoo/jhu-mt-class-translation-with-weighted-automata
     reading: 
       -
         author: Knight and Al-Onaizan
@@ -208,7 +198,6 @@ past:
   -
     date: 2015-03-12
     title: Representing Huge Translation Models
-    slides: http://www.slideshare.net/alopezfoo/jhu-mt-lecture20140415
     reading:
       -
         author: Callison-Burch et al.

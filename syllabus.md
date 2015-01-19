@@ -5,8 +5,9 @@ title: MT | Syllabus
 active_tab: syllabus
 ---
 
-The syllabus will be adopted from [this course](http://mt-class.org/jhu). 
-Check back soon for updates!
+Slides will be posted after each lecture. I generally consider slides to 
+visual aids for the lecture, so I urge you to read the source material
+(especially the textbook) rather than relying on the slides.
 
 <table class="table table-striped"> 
   <tbody>
