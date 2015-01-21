@@ -24,13 +24,15 @@ Time
 : Monday & Thursday, 16:10 to 17:00 
 
 Location
-: 16-20 George Square, room G.02
+: * Mondays: 7 Bristo Square, lecture theatre 3
+* Thursdays on weeks 2, 4, 6-11: Appleton Tower, lecture theatre 2
+* Thursdays on weeks 3 and 5: Medical School, room 425 (anatomy lecture theatre)
 
 Lecturer
 : [Adam Lopez](http://homepages.inf.ed.ac.uk/alopez/)
 
 Office hours
-: TBD
+: Immediately after class meetings or by appointment
 
 Discussion Forum
 : [Piazza](https://piazza.com/ed.ac.uk/spring2015/infr11062/home)
