@@ -84,7 +84,11 @@ our automatic alignment with human alignments of the first 150 sentences.
 Our measures will include _precision_, the percentage of guessed alignments 
 that are correct; _recall_, the percentage of human alignments that are 
 guessed; and [_alignment error rate_](http://aclweb.org/anthology/P/P00/P00-1056.pdf)
-(AER), which combines both measures. For precision and recall, 
+(AER), which combines both measures. Note that the human annotations were
+produced by pairs of annotators, and any alignment that they agree on are
+labeled _sure_, while any that were not agreed on by all annotators are
+labeled _possible_. Possible alignments are counted only in the precision
+measure. For precision and recall, 
 higher is better, while for AER, lower is better. To compute them, run:
 
     python score-alignments.py < dice200.out
