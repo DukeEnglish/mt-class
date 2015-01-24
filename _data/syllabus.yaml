@@ -40,7 +40,8 @@ past:
         optional: true
   -
     date: 2015-01-22
-    title: Learning Better Translation Models
+    title: A Brief Tour of Lexical Translation Models
+    slides: http://www.slideshare.net/alopezfoo/edinburgh-mt-lecture4alignment2
     reading:
       -
         author: Koehn 
@@ -49,6 +50,11 @@ past:
         author: Brown et al.
         title: The Mathematics of Statical Machine Translation&#58; Parameter Estimation
         url: http://aclweb.org/anthology-new/J/J93/J93-2003.pdf
+        optional: true
+      -
+        author: Dyer et al.
+        title: A Simple, Fast, and Effective Reparameterization of IBM Model 2
+        url: http://aclweb.org/anthology/N/N13/N13-1073.pdf
         optional: true
       -
         author: Vogel and Ney
