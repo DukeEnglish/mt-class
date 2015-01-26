@@ -238,8 +238,8 @@ __Question 2: The theory behind expectation maximization guarantees that
 the data likelihood increases after each iteration. Plot the data likelihood
 (you will need to do this in logspace to avoid numerical underflow) for
 some data over several iterations. How does it change? Does it appear to
-converge? Now compare this with the alignment accuracy of the model after
-each iteration. How do data likelihood and accuracy relate?__
+converge? Now compare this with the AER of the model after
+each iteration. How do data likelihood and AER relate?__
 
 __Question 3: Choose two English words from the data: a very frequent word,
 and an infrequent word. Now look at the learned translation distributions
@@ -254,7 +254,7 @@ distributions? Does this seem reasonable to you?__
 
 __Question 5: Observe the human alignments of the data. Do the English
 words appear to be chosen at random? Or, do there seem to be any underlying
-regularities in the data? How does this affect the accuracy of the
+regularities in the data? How does this affect the AER of the
 results you get with IBM Model 1?__
 
 
