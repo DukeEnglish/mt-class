@@ -247,9 +247,10 @@ for these words. What do you observe? How do the shapes of these distributions
 affect the resulting alignments?__
 
 __Question 4: Choose two English words from the data that are morphological
-variants of each other (e.g. _house_ and _houses_). How similar or dissimilar
-are they? Think about how IBM Model 1 treats these words. How does this
-affect the resulting distributions? Does this seem reasonable to you?__
+variants of each other (e.g. _house_ and _houses_). 
+Think about how IBM Model 1 treats these words. How does this
+affect the resulting learned translation 
+distributions? Does this seem reasonable to you?__
 
 __Question 5: Observe the human alignments of the data. Do the English
 words appear to be chosen at random? Or, do there seem to be any underlying
