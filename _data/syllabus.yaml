@@ -68,26 +68,19 @@ past:
         optional: true
   -
     date: 2015-01-26
-    title: Phrase-based translation
-    reading:
-      -
-        author: Koehn 
-        title: sections 5.3 &ndash; 5.4
-      -
-        author: Koehn et al.
-        url: http://aclweb.org/anthology-new/N/N03/N03-1017.pdf
-        title: Statistical Phrase-Based Translation
-        optional: true
+    title: Dynamic programming
+    slides: http://www.slideshare.net/alopezfoo/edinburgh-mt-lecture5dynamicprogramming
   -
     date: 2015-01-29
-    title: Stack decoding
-    links:
+    title: Decoding
+    slides: http://www.slideshare.net/alopezfoo/edinburgh-mt-lecture6phrasebased
+    reading:
       -
         author: Koehn
         title: chapter 6
   -
     date: 2015-02-02
-    title: Stack decoding continued
+    title: Phrase-based translation 
   -
     date: 2015-02-05
     title: Automatic evaluation of machine translation
