@@ -1,26 +1,29 @@
 ---
-layout: default
 img: voynich
 img_link: http://en.wikipedia.org/wiki/Voynich_manuscript 
 caption: The Voynich manuscript
-title: Homework 2 | Decoding
-active_tab: homework
+title: Decoding | Homework 2
+active_tab: hw2 
 ---
 
-Decoding <span class="text-muted">Challenge Problem 2</span>
+<div class="alert alert-info">
+  This assignment is due February 12 at 4pm.
+</div>
+
+Decoding <span class="text-muted">| Homework 2</span>
 =============================================================
 
 Decoding is process of taking input in French:
 
-_<center>
-honorables sénateurs , que se est - il passé ici , mardi dernier ?
-</center>_
+<p class="text-center">
+<em>honorables s&eacute;nateurs , que se est - il pass&eacute; ici , mardi dernier ?</em>
+</p>
 
 ...And finding its best English translation under your  model:
 
-_<center>
-honourable senators , what happened here last Tuesday ?
-</center>_
+<p class="text-center">
+<em>honourable senators , what happened here last Tuesday ?</em>
+</p>
 
 To decode, we need a model of English sentences conditioned on the
 French sentence. You did most of the work of creating
@@ -31,9 +34,9 @@ and an n-gram language model $$p_{\textrm{LM}}(\textbf{e})$$. __Your
 challenge is to find the most probable English translation under 
 the model.__ We assume a noisy channel decomposition.
 
-<center>
+<p class="text-center">
 $$\begin{align*} \textbf{e}^* & = \arg \max_{\textbf{e}} p(\textbf{e} \mid \textbf{f}) \\ & = \arg \max_{\textbf{e}} \frac{p_{\textrm{TM}}(\textbf{f} \mid \textbf{e}) \times p_{\textrm{LM}}(\textbf{e})}{p(\textbf{f})} \\ &= \arg \max_{\textbf{e}} p_{\textrm{TM}}(\textbf{f} \mid \textbf{e}) \times p_{\textrm{LM}}(\textbf{e}) \\ &= \arg \max_{\textbf{e}} \sum_{\textbf{a}} p_{\textrm{TM}}(\textbf{f},\textbf{a} \mid \textbf{e}) \times p_{\textrm{LM}}(\textbf{e}) \end{align*}$$
-</center>
+</p>
 
 Getting Started
 ---------------
@@ -46,35 +49,76 @@ from your working directory:
 
 Alternatively, get a fresh copy:
 
-    git clone https://github.com/alopez/en600.468.git
+    git clone https://github.com/alopez/infr11062.git
 
-Under the `decode` directory, you now have simple decoder.
-Test it out!
+Under the new `decode` directory, you now have simple decoder
+and some data files. Take a look at the input sentences:
+
+    cat data/input
+
+Let's translate them!
 
     python decode > output
 
 This creates the file `output` with translations of `data/input`.
-You can compute $$p(\textbf{e} \mid \textbf{f})$$ using `compute-model-score`.
+Take a look:
+
+    cat output
+
+You can probably get the gist of the Canadian senator's complaint 
+from this translation, but it isn't very readable. There are a 
+couple of possible explanations for this:
+
+1. We used a model of $$p(\textbf{e} \mid \textbf{f})$$ that gives high probability to bad translations. This is called *model error*.
+1. Our model is ok but our decoder fails to find $$\arg \max_{\textbf{e}} p(\textbf{e} \mid \textbf{f})$$. This is called *search error*.
+
+How can we tell which problem is the culprit? One way
+would be to eliminate problem 2, which is a purely computational 
+problem. Let's focus on this.
+
+You can compute a value that is proportional to
+$$p(\textbf{e} \mid \textbf{f})$$  using `compute-model-score`.
 
     python compute-model-score < output
 
 This command sums over all possible ways that the model could have 
 generated the English from the French, including translations
-that permute the phrases. This sum is
-intractable, but the phrase dictionary is fixed and sparse, 
-so we can compute it in a few minutes. It is still easier to do this 
-than it is to find the optimal translation. But if you look at this
-command you may get some hints about how to do the assignment!
+that permute the phrases. That is, it exactly computes:
+
+<p class="text-center">
+$$\sum_{\textbf{a}} p_{\textrm{TM}}(\textbf{f},\textbf{a} \mid \textbf{e}) \times p_{\textrm{LM}}(\textbf{e})$$
+</p>
+
+This value is proportional to $$p(\textbf{e} \mid \textbf{f})$$ up to
+the constant $$\frac{1}{p(\textbf{f})}$$. The sum is
+intractable in general, but it turns out that we can solve these
+particular sums in a few minutes. It is easier to do this 
+than it is to find the optimal translation. 
+
+I highly recommend that you look at `compute-model-score`.
+You may get some hints about how to do the assignment! It contains
+some useful utility functions, for example to add probabilities in
+logarithmic space, and manipulate bitmaps.
 
 The decoder generates the most probable translations 
-that it can find, using three common approximations. 
+that it can find, but it uses three common approximations that
+might cause search error. 
 
 First, it seeks the _Viterbi approximation_ to the most probable 
 translation. Instead of computing the intractable sum over
 all alignments for each sentence, we simply find the best 
 single alignment and use its translation.
 
-<center>$$\begin{align*} \textbf{e}^* &= \arg \max_{\textbf{e}} \sum_{\textbf{a}} p_{\textrm{TM}}(\textbf{f},\textbf{a} \mid \textbf{e}) \times p_{\textrm{LM}}(\textbf{e}) \\ &\approx \arg \max_{\textbf{e}} \max_{\textbf{a}} p_{\textrm{TM}}(\textbf{f},\textbf{a} \mid \textbf{e}) \times p_{\textrm{LM}}(\textbf{e}) \end{align*}$$</center>
+<p class="text-center">
+$$\begin{align*} \textbf{e}^* &= \arg \max_{\textbf{e}} \sum_{\textbf{a}} p_{\textrm{TM}}(\textbf{f},\textbf{a} \mid \textbf{e}) \times p_{\textrm{LM}}(\textbf{e}) \\ &\approx \arg \max_{\textbf{e}} \max_{\textbf{a}} p_{\textrm{TM}}(\textbf{f},\textbf{a} \mid \textbf{e}) \times p_{\textrm{LM}}(\textbf{e}) \end{align*}$$
+</p>
+
+This approximation makes it possible to use dynamic programming
+for search. This decoder uses a simple dynamic program that,
+for each input word position $$i$$, keeps a _stack_ (actually a priority queue) of the $$s$$
+most probable translations for the first $$i$$ words. The
+main dynamic programming loop begins at 
+[line 37](https://github.com/alopez/infr11062/blob/master/decoder/decode#L37).
 
 Second, it translates French phrases into English without
 changing their order. So, it only reorders words  if 
@@ -87,14 +131,17 @@ _<span class="text text-danger">last</span>
 <span class="text text-primary">Tuesday</span>_.
 If we consult `data/tm`, we will find that the model
 has memorized the phrase
-pair `mardi dernier ||| last Tuesday`. But in the
-second sentence, we see that 
-_<span class="text text-danger">Comité</span> 
-<span class="text text-primary">de sélection</span>_
+pair `mardi dernier ||| last Tuesday`. 
+
+    grep "mardi dernier" data/tm
+
+But in the second sentence, we see that 
+_<span class="text text-danger">Comit&eacute;</span> 
+<span class="text text-primary">de s&eacute;lection</span>_
 is translated as 
 _<span class="text text-danger">committee</span> 
 <span class="text text-primary">selection</span>_,
-rather than the more correct
+rather than the more fluent
 _<span class="text text-primary">selection</span>
 <span class="text text-danger">committee</span>_. 
 To show that this is a search problem rather than
@@ -110,19 +157,32 @@ scores (with lower absolute value) are better. We
 see that the model prefers
 _<span class="text text-primary">selection</span>
 <span class="text text-danger">committee</span>_, 
-but the decoder does not consider this word order.
+but the decoder does not consider this word order
+since it has never memorized this phrase pair.
 
 Finally, our decoder uses strict pruning. As it consumes the input
-sentence from left to right, it keeps only the highest-scoring
+sentence from left to right, it keeps only the most probable 
 output up to that point. You can vary the number of number
 of outputs kept at each point in the translation using the
-`-s` parameter. See how this affects the resulting model score.
+`-s` parameter. See how this affects the resulting model score
+and the actual translations.
 
-    python decode | python compute-model-score
-    python decode -s 10000 | python compute-model-score
+    python decode > out 
+    python compute-model-score < out
+    python decode -s 10000 > out10000
+    python compute-model-score < out10000
+    vimdiff out out10000
+    
+(Type `:q:q` to exit vimdiff).
 
-The Challenge
--------------
+**Question 1: Try several different values for the stack 
+size parameter `-s`. How do changes in this value affect 
+the resulting log-probabilities? How do they affect the 
+resulting translations?** 
+
+
+Baseline: Local Reordering
+--------------------------
 
 Your task is to __find the most probable English translation__.
 Our model assumes that any segmentation of the French sentence into
@@ -138,12 +198,27 @@ $$\arg \max_{\textbf{e}} \max_{\textbf{a}} \log p_{\textrm{TM}}(\textbf{f},\text
 baseline decoder works with log probabilities, so you can
 simply follow what it does. 
 
-To pass, you must implement a beam-search 
+To earn 8 marks, you must answer questions 1 and 2 and 
+implement a beam-search 
 decoder like the one we have given you 
-that is also capable of _swapping adjacent phrases_. To get 
+that is also capable of _swapping the translations of adjacent phrases_. That 
+is, your decoder should be able to produce the correct translation
+for the _<span class="text text-primary">selection</span>
+<span class="text text-danger">committee</span>_ example. It
+needn't to be able to permute sequences of three or more phrases.
+
+**Question 2: Answer the questions you answered in Question 1 for
+your new decoder.**
+
+The Challenge
+-------------
+
+Implementing a decoder that swaps adjacent phrases will earn you 8 marks out of
+10. But swapping adjacent phrases will not get you anywhere close to the most
+probable translation according to this model. To get 
 full credit, you __must__ additionally experiment with another decoding algorithm.
-Any permutation of phrases is a valid translation, so we strongly suggest
-searching over all or some part of this larger space. This search is
+Any permutation of phrases is a valid translation, so you might attempt to
+search over all or some part of this larger space. This search is
 NP-Hard, so it will not be easy. You 
 can trade efficiency for search effectiveness
 by implementing histogram pruning or threshold pruning, or by using 
@@ -152,7 +227,7 @@ consider implementing other approaches to solving this combinatorial
 optimization problem:
 
 * [Implement a greedy decoder](http://www.iro.umontreal.ca/~felipe/bib2webV0.81/cv/papers/paper-tmi-2007.pdf).
-* [Use chart parsing to search over many permutations in polynomial time](http://acl.ldc.upenn.edu/C/C04/C04-1030.pdf).
+* [Use chart parsing to search over many permutations in polynomial time](http://aclweb.org/anthology/C/C04/C04-1030.pdf).
 * [Use a traveling salesman problem (TSP) solver](http://aclweb.org/anthology-new/P/P09/P09-1038.pdf).
 * [Use finite-state algorithms](http://mi.eng.cam.ac.uk/~wjb31/ppubs/ttmjnle.pdf).
 * [Use Lagrangian relaxation](http://aclweb.org/anthology//D/D13/D13-1022.pdf).
@@ -171,43 +246,31 @@ You can try anything you want as long as you follow the ground rules:
 Ground Rules
 ------------
 
-* You can work in independently or in groups of up to three, under these 
+* You may work in independently or pairs, under these 
   conditions: 
-  1. You must announce the group publicly on piazza.
-  1. You agree that everyone in the group will receive the same grade on the assignment. 
-  1. You can add people or merge groups at any time before the assignment is
-     due. **You cannot drop people from your group once you've added them.**
-  We encourage collaboration, but we will not adjudicate Rashomon-style 
-  stories about who did or did not contribute.
-* You must turn in three things:
-  1. Your translations of the entire dataset, uploaded to the [leaderboard submission site](http://jhumtclass.appspot.com) according to <a href="assignment0.html">the Assignment 0 instructions</a>. You can upload new output as often
-     as you like, up until the assignment deadline. 
-  1. Your code. Send us a URL from which we can get the code and git revision
-     history (a link to a tarball will suffice, but you're free to send us a 
-     github link if you don't mind making your code public). This is due at the
-     deadline: when you upload your final answer, send us the code.
-     You are free to extend the code we provide or roll your own in whatever
-     langugage you like, but the code should be self-contained, 
-     self-documenting, and easy to use. 
-  1. A clear, mathematical description of your algorithm and its motivation
-     written in scientific style. This needn't be long, but it should be
-     clear enough that one of your fellow students could re-implement it 
-     exactly. [We will review examples in class before the due date](hw-writing-exercise.html).
-*  You do not need any other data than what we provide. You can
-   free to use any code or software you like, __except for those
-   expressly intended to decode machine translation models__. 
-   You must write your own decoder. If you want to use finite-state
-   libraries, solvers for traveling salesman problems, or
-   integer linear programming toolkits, that is fine. 
-   But machine translation software including (but not limited to)
-   Moses, cdec, Joshua, or phrasal is off-limits. You may of course inspect 
-   these systems if it helps you understand how they work. But be warned: they are
-   generally quite complicated because they provide a great deal of other
-   functionality that is not the focus of this assignment.
-   It is possible to complete the assignment with a modest amount
-   of python code. If you aren't sure whether something is permitted, 
-   ask us. If you want to do system combination, join forces with 
-   your classmates.
+    1. You must let me know about the collaboration in advance
+       by emailing me and copying your collaborator on the email.
+    1. You agree that everyone in the group will receive the same grade on the assignment. 
+    1. You cannot undo a collaboration once you've informed me.
+       I encourage collaboration since explaining things to someone else
+       often helps you understand them better yourself. But I will not adjudicate Rashomon-style 
+       stories about who did or did not contribute.
+* You must turn in four things using the `submit mt 2 <files>` command on dice:
+    1. A file containing your answers to Questions 1 and 2.
+    1. A clear, mathematical description of your algorithm and its motivation
+       written in scientific style. This needn't be long, but it should be
+       clear enough that one of your fellow students could re-implement it.
+    1. Your translations of the input sentences.
+    1. Your code. 
+       You are free to extend the code we provide or roll your own in whatever
+       langugage you like, but the code should be self-contained, 
+       self-documenting, and easy to use. 
+
+Your written work may be submitted in PDF, text, or markdown (like 
+[this website](https://github.com/alopez/mt-class)). I will not accept
+any other format. If you write the file in a different format, please
+convert it to one of the above prior to submission.
+
 
 
 *Credits: [Chris Dyer](http://www.cs.cmu.edu/~cdyer) made many improvements to this assignment.*
