@@ -81,9 +81,24 @@ past:
   -
     date: 2015-02-02
     title: Phrase-based translation 
+    slides: http://www.slideshare.net/alopezfoo/edinburgh-mt-lecture-7-phrasebased-mt
+    reading:
+      -
+        author: Koehn
+        title: sections 5.1 and 5.2
+      -
+        author: Koehn et al. 
+        title: Statistical phrase-based translation
+        url: http://aclweb.org/anthology/N/N03/N03-1017.pdf
+        optional: true
+      - 
+        author: DeNero and Klein
+        title: The complexity of phrase alignment problems
+        url: http://aclweb.org/anthology/P/P08/P08-2007.pdf
+        optional: true
   -
     date: 2015-02-05
-    title: Automatic evaluation of machine translation
+    title: Evaluating machine translation
   -
     date: 2015-02-09
     title: Feature-based models
