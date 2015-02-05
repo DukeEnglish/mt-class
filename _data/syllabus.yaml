@@ -98,7 +98,17 @@ past:
         optional: true
   -
     date: 2015-02-05
-    title: Evaluating machine translation
+    title: Measuring translation accuracy
+    slides: http://www.slideshare.net/alopezfoo/edinburgh-mt-lecture-8-measuring-translation-accuracy
+    reading:
+      - 
+        author: Koehn
+        title: chapter 8
+      - 
+        author: Sakaguchi et al.
+        title: Efficient Elicitation of Annotations for Human Evaluation of Machine Translation
+        url: http://www.aclweb.org/anthology/W14-3301.pdf
+        optional: true
   -
     date: 2015-02-09
     title: Feature-based models

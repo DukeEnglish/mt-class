@@ -136,8 +136,8 @@ pair `mardi dernier ||| last Tuesday`.
     grep "mardi dernier" data/tm
 
 But in the second sentence, we see that 
-_<span class="text text-danger">Comit&eacute;</span> 
-<span class="text text-primary">de s&eacute;lection</span>_
+_<span class="text text-danger">Comit&eacute; de</span> 
+<span class="text text-primary">s&eacute;lection</span>_
 is translated as 
 _<span class="text text-danger">committee</span> 
 <span class="text text-primary">selection</span>_,
