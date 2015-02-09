@@ -121,10 +121,6 @@ past:
     title: Loss-Sensitive Training of Feature-Based Models
     reading:
       - 
-        author: Todd Balf
-        url: http://www.nytimes.com/2014/03/09/magazine/the-story-behind-the-sat-overhaul.html
-        title: The Story Behind the SAT Overhaul
-      - 
         author: Koehn
         title: sections 9.1 &ndash; 9.3
       -
@@ -134,55 +130,16 @@ past:
         optional: true
   -
     date: 2015-02-23
-    title: Large-scale discriminative training of feature-based models
+    title: Modeling syntax in translation
     reading:
-      - 
-        author: Koehn
-        title: section 9.4
-      -
-        author: Cherry &amp; Foster 
-        url: http://aclweb.org/anthology-new/N/N12/N12-1047v2.pdf
-        title: Batch Tuning Strategies for Statistical Machine Translation
-        optional: true
-      -
-        author: Hopkins &amp; May
-        url: http://aclweb.org/anthology/D/D11/D11-1125.pdf
-        title: Tuning as Ranking
-        optional: true
   -
     date: 2015-02-26
-    title: Syntax-based Translation
+    title: Modeling syntax in translation
     reading:
-      -
-        author: Chiang
-        title: An Introduction to Synchronous Grammars
-        url: http://isi.edu/~chiang/papers/synchtut.pdf
-      -
-        author: Collins et al.
-        title: Clause Restructuring for Statistical Machine Translation
-        url: http://aclweb.org/anthology-new/P/P05/P05-1066.pdf
-      -
-        author: Twain
-        title: The Awful German Language
-        url: http://www.crossmyt.com/hc/linghebr/awfgrmlg.html
-        optional: true
   -
     date: 2015-03-02
-    title: Syntax-Based Translation Part 2&#58; Synchronous Grammars
+    title: Modeling syntax Translation 
     reading:
-      -
-        author: Yamada and Knight
-        title: Syntax-based Statistical Machine Translation
-        url: http://aclweb.org/anthology-new/P/P01/P01-1067.pdf
-      -
-        author: Heidi Fox
-        title: Phrasal Cohesion and Statistical Machine Translation
-        url: http://www.aclweb.org/anthology-new/W/W02/W02-1039.pdf
-      -
-        author: Galley et al.
-        title: What&rsquo;s in a Translation Rule?
-        url: http://aclweb.org/anthology-new/N/N04/N04-1035.pdf
-        optional: true
   -
     date: 2015-03-05
     title: Translation with Weighted Automata
@@ -203,41 +160,12 @@ past:
         optional: true
   -
     date: 2015-03-09
-    title: Translation with Weighted Automata continued
+    title: Modeling morphology in translation
     reading: 
-      -
-        author: Knight and Al-Onaizan
-        url: http://www.isi.edu/natural-language/mt/mt-wfst.ps
-        title: Translation with Finite-State Devices
-      -
-        author: Iglesias et al.
-        title: Hierarchical Phrase-Based Translation with Weighted Finite State Transducers
-        url: http://aclweb.org/anthology-new/N/N09/N09-1049.pdf
-        optional: true
-      -
-        author: Iglesias et al.
-        title: Hierarchical Phrase-Based Translation Representations
-        url: http://aclweb.org/anthology-new/D/D11/D11-1127.pdf
-        optional: true
   -
     date: 2015-03-12
-    title: Representing Huge Translation Models
+    title: Modeling semantics in translation
     reading:
-      -
-        author: Callison-Burch et al.
-        title: Scaling Phrase-Based Statistical Machine Translation to Larger Corpora and Longer Phrases
-        url: http://aclweb.org/anthology-new/P/P05/P05-1032.pdf
-        optional: true
-      -
-        author: Lopez 
-        title: Hierarchical Phrase-Based Translation with Suffix Arrays
-        url: http://aclweb.org/anthology-new/D/D07/D07-1104.pdf
-        optional: true
-      - 
-        author: He et al.
-        title: Massively Parallel Suffix Array Queries and On-Demand Phrase Extraction for Statistical Machine Translation Using GPUs
-        url: http://aclweb.org/anthology//N/N13/N13-1033.pdf
-        optional: true
   -
     date: 2015-03-16
     title: TBD guest lecture
@@ -246,13 +174,10 @@ past:
     title: TBD guest lecture
   -
     date: 2015-03-23
-    title: Representing Huge Language Models
+    title: Terascale models
   -
     date: 2015-03-26
-    title: Neural Translation Models
-  -
-    date: 2015-03-30
-    title: Semantics-Preserving Machine Translation
+    title: Decipherment
   -
     date: 2015-04-02
     title: The Colorful History of Machine Translation
