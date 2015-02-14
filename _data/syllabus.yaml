@@ -112,20 +112,27 @@ past:
   -
     date: 2015-02-09
     title: Feature-based models
+    slides: http://www.slideshare.net/alopezfoo/edinburgh-mt-lecture9features
     reading:
       -
         author: Koehn
         title: chapter 9
   -
     date: 2015-02-12
-    title: Loss-Sensitive Training of Feature-Based Models
+    title: Discriminative Learning
+    slides: http://www.slideshare.net/alopezfoo/edinburgh-mt-lecture-10-discriminative-training
     reading:
       - 
         author: Koehn
         title: sections 9.1 &ndash; 9.3
       -
+        author: Hopkins and May
+        title: Tuning as Ranking
+        url: http://www.aclweb.org/anthology/D11-1125
+        optional: true
+      -
         author: Och
-        url: http://aclweb.org/anthology-new/P/P03/P03-1021.pdf
+        url: http://aclweb.org/anthology/P/P03/P03-1021.pdf
         title: Minimum Error Rate Training in Statistical Machine Translation
         optional: true
   -
