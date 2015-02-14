@@ -6,8 +6,8 @@ title: Decoding | Homework 2
 active_tab: hw2 
 ---
 
-<div class="alert alert-info">
-  This assignment is due February 12 at 4pm.
+<div class="alert alert-danger">
+  This assignment is over.
 </div>
 
 Decoding <span class="text-muted">| Homework 2</span>
