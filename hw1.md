@@ -317,13 +317,13 @@ convert it to one of the above prior to submission.
 
 ### Acknowledgements
 
+This assignment was developed in collaboration with
+[Chris Callison-Burch](http://www.cis.upenn.edu/~ccb/),
 [John DeNero](http://www.denero.org/),
 [Chris Dyer](http://www.cs.cmu.edu/~cdyer),
 [Philipp Koehn](http://homepages.inf.ed.ac.uk/pkoehn/),
 [Matt Post](http://cs.jhu.edu/~post/), and
-[Anoop Sarkar](http://www.cs.sfu.ca/~anoop/)
-contributed to the development of this 
-assignment.
+[Anoop Sarkar](http://www.cs.sfu.ca/~anoop/).
 
 
 ### Footnotes 

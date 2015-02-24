@@ -272,5 +272,9 @@ any other format. If you write the file in a different format, please
 convert it to one of the above prior to submission.
 
 
+### Acknowledgements
 
-*Credits: [Chris Dyer](http://www.cs.cmu.edu/~cdyer) made many improvements to this assignment.*
+This assignment was developed in collaboration with
+[Chris Callison-Burch](http://www.cis.upenn.edu/~ccb/),
+[Chris Dyer](http://www.cs.cmu.edu/~cdyer), and
+[Matt Post](http://cs.jhu.edu/~post/).

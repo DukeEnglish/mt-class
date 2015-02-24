@@ -137,15 +137,26 @@ past:
         optional: true
   -
     date: 2015-02-23
-    title: Modeling syntax in translation
+    title: The problem of syntax
+    slides: http://www.slideshare.net/alopezfoo/edinburgh-mt-lecture-11-the-problem-of-syntax
     reading:
+      -
+        author: Bisazza and Federico 
+        url: http://arxiv.org/abs/1502.04938
+        title: A Survey of Word Reordering in Statistical Machine Translation&#58; Computational Models and Language Phenomena
+        optional: true
+      -
+        author: Collins et al.
+        url: http://www.aclweb.org/anthology/P/P05/P05-1066.pdf
+        title: Clause Restructuring for Statistical Machine Translation
+        optional: true
   -
     date: 2015-02-26
     title: Modeling syntax in translation
     reading:
   -
     date: 2015-03-02
-    title: Modeling syntax in translation
+    title: Inference in syntactic models
     reading:
   -
     date: 2015-03-05
@@ -178,7 +189,7 @@ past:
     title: Guest lecture by Alexandra Birch
   -
     date: 2015-03-19
-    title: Guest lecture by Bonnie Webber&colon; Handling discourse features in SMT
+    title: Guest lecture by Bonnie Webber&#58; Handling discourse features in SMT
   -
     date: 2015-03-23
     title: Terascale models
