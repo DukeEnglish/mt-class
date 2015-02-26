@@ -5,9 +5,9 @@ title: MT | Syllabus
 active_tab: syllabus
 ---
 
-Slides will be posted after each lecture. I generally consider slides to 
+Slides will be posted after each lecture. I consider slides to be
 visual aids for the lecture, so I urge you to read the source material
-(especially the textbook) rather than relying on the slides.
+(especially the textbook) and not to rely extensively on the slides.
 
 <table class="table table-striped"> 
   <tbody>
