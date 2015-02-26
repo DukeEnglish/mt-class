@@ -10,7 +10,7 @@ past:
         title: chapter 1
       -
         author: Knight
-        title:  Automating Knowledge Acquisition for Machine Translation
+        title:  Automating knowledge acquisition for machine translation
         url: http://www.isi.edu/natural-language/mt/aimag97.pdf
         optional: true
   -
@@ -31,11 +31,11 @@ past:
         title: chapter 3
       -
         author: Lopez
-        title: Word Alignment and the Expectation Maximization Algorithm
+        title: Word alignment and the expectation maximization algorithm
         url: http://edin.ac/1DH1C78 
       -
         author: Knight
-        title: A Tutorial MT Workbook
+        title: A tutorial MT workbook
         url: http://www.isi.edu/natural-language/mt/wkbk.rtf
         optional: true
   -
@@ -48,12 +48,12 @@ past:
         title: chapter 4
       -
         author: Brown et al.
-        title: The Mathematics of Statical Machine Translation&#58; Parameter Estimation
+        title: The mathematics of statical machine translation&#58; parameter estimation
         url: http://aclweb.org/anthology-new/J/J93/J93-2003.pdf
         optional: true
       -
         author: Dyer et al.
-        title: A Simple, Fast, and Effective Reparameterization of IBM Model 2
+        title: A simple, fast, and effective reparameterization of IBM model 2
         url: http://aclweb.org/anthology/N/N13/N13-1073.pdf
         optional: true
       -
@@ -63,7 +63,7 @@ past:
         optional: true
       -
         author: Liang et al.
-        title: Alignment by Agreement
+        title: Alignment by agreement
         url: http://aclweb.org/anthology-new/N/N06/N06-1014.pdf
         optional: true
   -
@@ -106,7 +106,7 @@ past:
         title: chapter 8
       - 
         author: Sakaguchi et al.
-        title: Efficient Elicitation of Annotations for Human Evaluation of Machine Translation
+        title: Efficient elicitation of annotations for human evaluation of machine translation
         url: http://www.aclweb.org/anthology/W14-3301.pdf
         optional: true
   -
@@ -127,13 +127,13 @@ past:
         title: sections 9.1 &ndash; 9.3
       -
         author: Hopkins and May
-        title: Tuning as Ranking
+        title: Tuning as ranking
         url: http://www.aclweb.org/anthology/D11-1125
         optional: true
       -
         author: Och
         url: http://aclweb.org/anthology/P/P03/P03-1021.pdf
-        title: Minimum Error Rate Training in Statistical Machine Translation
+        title: Minimum error rate training in statistical machine translation
         optional: true
   -
     date: 2015-02-23
@@ -143,17 +143,32 @@ past:
       -
         author: Bisazza and Federico 
         url: http://arxiv.org/abs/1502.04938
-        title: A Survey of Word Reordering in Statistical Machine Translation&#58; Computational Models and Language Phenomena
+        title: A survey of word reordering in statistical machine translation&#58; computational models and language phenomena
         optional: true
       -
         author: Collins et al.
         url: http://www.aclweb.org/anthology/P/P05/P05-1066.pdf
-        title: Clause Restructuring for Statistical Machine Translation
+        title: Clause restructuring for statistical machine translation
         optional: true
   -
     date: 2015-02-26
-    title: Modeling syntax in translation
+    title: Synchronous context-free grammar
+    slides: http://www.slideshare.net/alopezfoo/edinburgh-mt-lecture-12-synchronous-contextfree-grammar
     reading:
+      -
+        author: Chiang
+        url: http://www3.nd.edu/~dchiang/papers/synchtut.pdf
+        title: An introduction to synchronous grammars
+      - 
+        author: Goodman
+        url: http://www.aclweb.org/anthology/J99-4004
+        title: Semiring parsing
+        optional: true
+      -
+        author: Aho and Ullman
+        url: http://www.sciencedirect.com/science/article/pii/S0022000069800061
+        title: Syntax directed translations and the pushdown assembler
+        optional: true
   -
     date: 2015-03-02
     title: Inference in syntactic models
