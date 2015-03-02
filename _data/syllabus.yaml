@@ -171,8 +171,23 @@ past:
         optional: true
   -
     date: 2015-03-02
-    title: Inference in syntactic models
+    title: Practical SCFGs
+    slides: http://www.slideshare.net/alopezfoo/edinburgh-mt-lecture-13-practical-scfgs
     reading:
+      -
+        author: Chiang
+        url: http://www.aclweb.org/anthology/J07-2003.pdf
+        title: Hierarchical phrase-based translation
+      -
+        author: Galley et al.
+        url: http://anthology.aclweb.org/N/N04/N04-1035.pdf
+        title: What's in a translation rule?
+        optional: true
+      -
+        author: Fox
+        url: http://www.aclweb.org/anthology/W02-1039
+        title: Phrasal cohesion and statistical machine translation
+        optional: true
   -
     date: 2015-03-05
     title: Translation with weighted automata
