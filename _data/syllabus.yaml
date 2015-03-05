@@ -190,7 +190,8 @@ past:
         optional: true
   -
     date: 2015-03-05
-    title: Translation with weighted automata
+    title: Weighted automata
+    slides: http://www.slideshare.net/alopezfoo/edinburgh-mt-lecture-14-weighted-automata
     reading: 
       -
         author: Knight and Al-Onaizan
