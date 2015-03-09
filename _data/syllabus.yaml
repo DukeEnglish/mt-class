@@ -209,8 +209,23 @@ past:
         optional: true
   -
     date: 2015-03-09
-    title: Modeling morphology in translation
+    title: The secret life of words
+    slides: http://www.slideshare.net/alopezfoo/edinburgh-mt-lecture-15-the-secret-life-of-words
     reading: 
+      -
+        author: Goldwater and McClosky
+        url: http://www.aclweb.org/anthology/H05-1085
+        title: Improving Statistical MT through Morphological Analysis
+      -
+        author: Toutanova et al.
+        url: http://www.aclweb.org/anthology/P08-1059.pdf
+        title: Applying Morphology Generation Models to Machine Translation
+        optional: true
+      -
+        author: Chahuneau et al.
+        url: http://aclweb.org/anthology/D/D13/D13-1174.pdf
+        title: Translating into Morphologically Rich Languages with Synthetic Phrases
+        optional: true
   -
     date: 2015-03-12
     title: Modeling semantics in translation
