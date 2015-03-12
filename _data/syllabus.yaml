@@ -228,8 +228,19 @@ past:
         optional: true
   -
     date: 2015-03-12
-    title: Modeling semantics in translation
+    title: Neurons and semantics and stuff
+    slides: http://www.slideshare.net/alopezfoo/edinburgh-mt
     reading:
+      -
+        author: Devlin et al.
+        url: http://www.aclweb.org/anthology/P/P14/P14-1129.pdf
+        title: Fast and robust neural network joint models for statistical machine translation
+        optional: true
+      -
+        author: Chiang et al.
+        url: http://www.aclweb.org/anthology/P13-1091
+        title: Parsing graphs with hyperedge replacement grammars
+        optional: true
   -
     date: 2015-03-16
     title: Guest lecture by Alexandra Birch&#58; Translating spoken language
@@ -237,12 +248,9 @@ past:
     date: 2015-03-19
     title: Guest lecture by Bonnie Webber&#58; Handling discourse features in SMT
   -
-    date: 2015-03-23
-    title: Terascale models
-  -
     date: 2015-03-26
     title: Decipherment
   -
     date: 2015-04-02
-    title: The colorful history of machine translation
+    title: The colorful history of machine translation (optional)
 
