@@ -5,6 +5,10 @@ title: MT | Syllabus
 active_tab: syllabus
 ---
 
+<div class="alert alert-danger">
+  This is the 2015 syllabus. It may be slightly updated for 2016.
+</div>
+
 Slides will be posted after each lecture. I consider slides to be
 visual aids for the lecture, so I urge you to read the source material
 (especially the textbook) and not to rely extensively on the slides.

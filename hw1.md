@@ -7,7 +7,7 @@ active_tab: hw1
 ---
 
 <div class="alert alert-danger">
-  This assignment is over.
+  This is the 2015 assignment. It may be changed or replaced for 2016.
 </div>
 
 

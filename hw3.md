@@ -6,8 +6,8 @@ title: Reranking | Homework 3
 active_tab: hw3 
 ---
 
-<div class="alert alert-info">
-  This assignment is due 12 March at 16:00.
+<div class="alert alert-danger">
+  This is the 2015 assignment. It may be changed or replaced for 2016.
 </div>
 
 Reranking <span class="text-muted">| Homework 3</span>

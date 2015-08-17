@@ -20,13 +20,13 @@ machine learning, algorithms, data structures, and formal
 language theory, showing how they apply to a real and difficult
 problem in artificial intelligence.
 
+#### Spring 2016 information
+
 Time 
 : Monday & Thursday, 16:10 to 17:00 
 
 Location
-: * Mondays: 7 Bristo Square, lecture theatre 3
-* Thursdays on weeks 2, 4, 6-11: Appleton Tower, lecture theatre 2
-* Thursdays on weeks 3 and 5: Medical School, room 425 (anatomy lecture theatre)
+: 7 George Square, room S.1
 
 Lecturer
 : [Adam Lopez](http://homepages.inf.ed.ac.uk/alopez/)
@@ -35,7 +35,7 @@ Office hours
 : Immediately after class meetings or by appointment
 
 Discussion Forum
-: [Piazza](https://piazza.com/ed.ac.uk/spring2015/infr11062/home)
+: [Piazza](https://piazza.com/ed.ac.uk/spring2016/infr11062/home)
 
 Textbook
 : [Statistical Machine Translation](http://www.statmt.org/book/) 
@@ -45,13 +45,13 @@ Available [online](http://edin.ac/1xIEjYi)
 or [on loan](http://edin.ac/1vf7H1i) from the University library.
 
 Course Descriptor
-: [INFR11062](http://www.drps.ed.ac.uk/14-15/dpt/cxinfr11062.htm) \| [MT](http://course.inf.ed.ac.uk/mt/)
+: [INFR11062](http://www.drps.ed.ac.uk/15-16/dpt/cxinfr11062.htm) \| [MT](http://course.inf.ed.ac.uk/mt/)
 
 Assessment
 : * Three practical assignments (10% each)
-   1. Alignment, due January 29
-   2. Decoding, due February 12
-   3. Reranking, due March 12
+   1. Alignment, due 28 Jan 16:00
+   2. Decoding, due 11 Feb 16:00
+   3. Reranking, due 7 Mar 16:00
 * Final exam (70%)
 
 
