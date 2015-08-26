@@ -54,4 +54,12 @@ Assessment
    3. Reranking, due 7 Mar 16:00
 * Final exam (70%)
 
+Prerequisites
+: <a href="http://www.inf.ed.ac.uk/teaching/courses/anlp/">ANLP</a> or equivalent. Students are expected to understand the following topics, or be prepared to learn them independently. 
+
+   * Discrete mathematics: analysis of algorithms, dynamic programming, basic graph algorithms, finite and pushdown automata.
+   * Other essential maths: basic probability theory; basic calculus and linear algebra; ability to read and manipulate mathematical notation including sums, products, log, and exp. 
+   * Programming: ability to read and modify python programs; ability to design and implement a function based on high-level description such as pseudocode or a precise mathematical statement of what the function computes.
+   * Linguistics: willingness to learn basic elements of linguistic description; no formal linguistics background required.
+
 
