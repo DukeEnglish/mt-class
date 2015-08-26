@@ -3,7 +3,6 @@ past:
   -
     date: 2015-01-12
     title: Introduction
-    slides: http://www.slideshare.net/alopezfoo/edinburgh-mt-lecture1
     reading:
       -
         author: Koehn 
@@ -16,7 +15,6 @@ past:
   -
     date: 2015-01-15
     title: Probability and language models
-    slides: http://www.slideshare.net/alopezfoo/edinburgh-mt-lecture2-probability-and-language-models
     reading:
       -
         author: Koehn 
@@ -24,7 +22,6 @@ past:
   -
     date: 2015-01-19
     title: Latent variable models and word alignment
-    slides: http://www.slideshare.net/alopezfoo/edinburgh-mt-lecture3wordalignment
     reading:
       -
         author: Koehn 
@@ -41,7 +38,6 @@ past:
   -
     date: 2015-01-22
     title: A brief tour of lexical translation models
-    slides: http://www.slideshare.net/alopezfoo/edinburgh-mt-lecture4alignment2
     reading:
       -
         author: Koehn 
@@ -69,11 +65,9 @@ past:
   -
     date: 2015-01-26
     title: Dynamic programming
-    slides: http://www.slideshare.net/alopezfoo/edinburgh-mt-lecture5dynamicprogramming
   -
     date: 2015-01-29
     title: Decoding
-    slides: http://www.slideshare.net/alopezfoo/edinburgh-mt-lecture6phrasebased
     reading:
       -
         author: Koehn
@@ -81,7 +75,6 @@ past:
   -
     date: 2015-02-02
     title: Phrase-based translation 
-    slides: http://www.slideshare.net/alopezfoo/edinburgh-mt-lecture-7-phrasebased-mt
     reading:
       -
         author: Koehn
@@ -99,7 +92,6 @@ past:
   -
     date: 2015-02-05
     title: Measuring translation accuracy
-    slides: http://www.slideshare.net/alopezfoo/edinburgh-mt-lecture-8-measuring-translation-accuracy
     reading:
       - 
         author: Koehn
@@ -112,7 +104,6 @@ past:
   -
     date: 2015-02-09
     title: Feature-based models
-    slides: http://www.slideshare.net/alopezfoo/edinburgh-mt-lecture9features
     reading:
       -
         author: Koehn
@@ -120,7 +111,6 @@ past:
   -
     date: 2015-02-12
     title: Discriminative learning
-    slides: http://www.slideshare.net/alopezfoo/edinburgh-mt-lecture-10-discriminative-training
     reading:
       - 
         author: Koehn
@@ -138,7 +128,6 @@ past:
   -
     date: 2015-02-23
     title: The problem of syntax
-    slides: http://www.slideshare.net/alopezfoo/edinburgh-mt-lecture-11-the-problem-of-syntax
     reading:
       -
         author: Bisazza and Federico 
@@ -153,7 +142,6 @@ past:
   -
     date: 2015-02-26
     title: Synchronous context-free grammar
-    slides: http://www.slideshare.net/alopezfoo/edinburgh-mt-lecture-12-synchronous-contextfree-grammar
     reading:
       -
         author: Chiang
@@ -172,7 +160,6 @@ past:
   -
     date: 2015-03-02
     title: Practical SCFGs
-    slides: http://www.slideshare.net/alopezfoo/edinburgh-mt-lecture-13-practical-scfgs
     reading:
       -
         author: Chiang
@@ -191,7 +178,6 @@ past:
   -
     date: 2015-03-05
     title: Weighted automata
-    slides: http://www.slideshare.net/alopezfoo/edinburgh-mt-lecture-14-weighted-automata
     reading: 
       -
         author: Knight and Al-Onaizan
@@ -210,7 +196,6 @@ past:
   -
     date: 2015-03-09
     title: The secret life of words
-    slides: http://www.slideshare.net/alopezfoo/edinburgh-mt-lecture-15-the-secret-life-of-words
     reading: 
       -
         author: Goldwater and McClosky
@@ -229,7 +214,6 @@ past:
   -
     date: 2015-03-12
     title: Neurons and semantics and stuff
-    slides: http://www.slideshare.net/alopezfoo/edinburgh-mt
     reading:
       -
         author: Devlin et al.
