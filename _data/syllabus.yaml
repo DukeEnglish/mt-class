@@ -1,9 +1,14 @@
 ---
 past:
   -
-    date: 2015-01-12
+    date: 2015-01-11
     title: Introduction
+    slides: http://www.slideshare.net/alopezfoo/edinburgh-mt-lecture1-57190289
     reading:
+      -
+        author: Goldwater
+        title: Basic probability theory
+        url: http://homepages.inf.ed.ac.uk/sgwater/math_tutorials.html
       -
         author: Koehn 
         title: chapter 1
@@ -13,15 +18,17 @@ past:
         url: http://www.isi.edu/natural-language/mt/aimag97.pdf
         optional: true
   -
-    date: 2015-01-15
+    date: 2015-01-14
     title: Probability and language models
+    slides: http://www.slideshare.net/alopezfoo/edinburgh-mt-lecture2-probability-and-language-models
     reading:
       -
         author: Koehn 
         title: chapters 2 and 7 
   -
-    date: 2015-01-19
+    date: 2015-01-18
     title: Latent variable models and word alignment
+    slides: http://www.slideshare.net/alopezfoo/edinburgh-mt-lecture3wordalignment
     reading:
       -
         author: Koehn 
@@ -36,8 +43,9 @@ past:
         url: http://www.isi.edu/natural-language/mt/wkbk.rtf
         optional: true
   -
-    date: 2015-01-22
+    date: 2015-01-21
     title: A brief tour of lexical translation models
+    slides: http://www.slideshare.net/alopezfoo/edinburgh-mt-lecture4alignment2
     reading:
       -
         author: Koehn 
@@ -58,23 +66,26 @@ past:
         url: http://aclweb.org/anthology-new/C/C96/C96-2141.pdf
         optional: true
       -
-        author: Liang et al.
-        title: Alignment by agreement
-        url: http://aclweb.org/anthology-new/N/N06/N06-1014.pdf
+        author: Riley and Gildea
+        title: Improving the IBM Alignment Models Using Variational Bayes
+        url: http://www.aclweb.org/anthology/P12-2060
         optional: true
   -
-    date: 2015-01-26
+    date: 2015-01-25
+    slides: http://www.slideshare.net/alopezfoo/edinburgh-mt-lecture5dynamicprogramming
     title: Dynamic programming
   -
-    date: 2015-01-29
+    date: 2015-01-28
+    slides: http://www.slideshare.net/alopezfoo/edinburgh-mt-lecture6phrasebased
     title: Decoding
     reading:
       -
         author: Koehn
         title: chapter 6
   -
-    date: 2015-02-02
+    date: 2015-02-01
     title: Phrase-based translation 
+    slides: http://www.slideshare.net/alopezfoo/edinburgh-mt-lecture-7-phrasebased-mt
     reading:
       -
         author: Koehn
@@ -90,8 +101,9 @@ past:
         url: http://aclweb.org/anthology/P/P08/P08-2007.pdf
         optional: true
   -
-    date: 2015-02-05
+    date: 2015-02-04
     title: Measuring translation accuracy
+    slides: http://www.slideshare.net/alopezfoo/edinburgh-mt-lecture-8-measuring-translation-accuracy
     reading:
       - 
         author: Koehn
@@ -102,15 +114,17 @@ past:
         url: http://www.aclweb.org/anthology/W14-3301.pdf
         optional: true
   -
-    date: 2015-02-09
+    date: 2015-02-08
     title: Feature-based models
+    slides: http://www.slideshare.net/alopezfoo/edinburgh-mt-lecture9features
     reading:
       -
         author: Koehn
         title: chapter 9
   -
-    date: 2015-02-12
+    date: 2015-02-11
     title: Discriminative learning
+    slides: http://www.slideshare.net/alopezfoo/edinburgh-mt-lecture-10-discriminative-training
     reading:
       - 
         author: Koehn
@@ -126,8 +140,45 @@ past:
         title: Minimum error rate training in statistical machine translation
         optional: true
   -
-    date: 2015-02-23
-    title: The problem of syntax
+    date: 2015-02-22
+    title: Neural language models
+    slides: http://www.slideshare.net/alopezfoo/edinburgh-mt-lecture-11-neural-language-models
+    reading:
+      -
+        author: Bengio et al.
+        title: A neural probabilistic language model
+        url: http://www.ai.mit.edu/projects/jmlr/papers/volume3/tmp/bengio03a.pdf
+  -
+    date: 2015-02-25
+    title: Neural encoder-decoder models
+    slides: http://www.slideshare.net/alopezfoo/edinburgh-mt-lecture-12-neural-encoderdecoder-and-attention-models
+    reading:
+      -
+        author: Bahdanau et al.
+        title: Neural Machine Translation by Jointly Learning to Align and Translate
+        url: http://arxiv.org/abs/1409.0473
+  -
+    date: 2015-02-29
+    title: Morphology
+    slides: http://www.slideshare.net/alopezfoo/edinburgh-mt-lecture-15-the-secret-life-of-words
+  - 
+    date: 2015-03-03
+    title: Modeling morphology in translation
+    slides: http://www.slideshare.net/alopezfoo/edinburgh-mt-lecture-14-modeling-morphology-in-translation
+    reading:
+      -
+        author: Goldwater and McClosky
+        url: http://www.aclweb.org/anthology/H05-1085
+        title: Improving Statistical MT through Morphological Analysis
+      -
+        author: Toutanova et al.
+        url: http://www.aclweb.org/anthology/P08-1059.pdf
+        title: Applying Morphology Generation Models to Machine Translation
+        optional: true
+  -
+    date: 2015-03-07
+    title: Syntax
+    slides: https://www.slideshare.net/alopezfoo/edinburgh-mt-lecture-11-the-problem-of-syntax
     reading:
       -
         author: Bisazza and Federico 
@@ -139,32 +190,30 @@ past:
         url: http://www.aclweb.org/anthology/P/P05/P05-1066.pdf
         title: Clause restructuring for statistical machine translation
         optional: true
-  -
-    date: 2015-02-26
-    title: Synchronous context-free grammar
+  - 
+    date: 2015-03-10
+    title: Synchronous context-free grammars
+    slides: http://www.slideshare.net/alopezfoo/edinburgh-mt-lecture-12-synchronous-contextfree-grammar
     reading:
       -
         author: Chiang
         url: http://www3.nd.edu/~dchiang/papers/synchtut.pdf
         title: An introduction to synchronous grammars
-      - 
-        author: Goodman
-        url: http://www.aclweb.org/anthology/J99-4004
-        title: Semiring parsing
-        optional: true
       -
         author: Aho and Ullman
         url: http://www.sciencedirect.com/science/article/pii/S0022000069800061
         title: Syntax directed translations and the pushdown assembler
         optional: true
   -
-    date: 2015-03-02
-    title: Practical SCFGs
+    date: 2015-03-14
+    title: Modeling syntax and semantics with synchronous grammars
+    slides: https://www.slideshare.net/alopezfoo/edinburgh-mt-lecture-13-practical-scfgs
     reading:
-      -
-        author: Chiang
-        url: http://www.aclweb.org/anthology/J07-2003.pdf
-        title: Hierarchical phrase-based translation
+      - 
+        author: Goodman
+        url: http://www.aclweb.org/anthology/J99-4004
+        title: Semiring parsing
+        optional: true
       -
         author: Galley et al.
         url: http://anthology.aclweb.org/N/N04/N04-1035.pdf
@@ -175,66 +224,33 @@ past:
         url: http://www.aclweb.org/anthology/W02-1039
         title: Phrasal cohesion and statistical machine translation
         optional: true
-  -
-    date: 2015-03-05
-    title: Weighted automata
-    reading: 
-      -
-        author: Knight and Al-Onaizan
-        url: http://www.isi.edu/natural-language/mt/mt-wfst.ps
-        title: Translation with Finite-State Devices
-      -
-        author: Iglesias et al.
-        title: Hierarchical Phrase-Based Translation with Weighted Finite State Transducers
-        url: http://aclweb.org/anthology-new/N/N09/N09-1049.pdf
-        optional: true
-      -
-        author: Iglesias et al.
-        title: Hierarchical Phrase-Based Translation Representations
-        url: http://aclweb.org/anthology-new/D/D11/D11-1127.pdf
-        optional: true
-  -
-    date: 2015-03-09
-    title: The secret life of words
-    reading: 
-      -
-        author: Goldwater and McClosky
-        url: http://www.aclweb.org/anthology/H05-1085
-        title: Improving Statistical MT through Morphological Analysis
-      -
-        author: Toutanova et al.
-        url: http://www.aclweb.org/anthology/P08-1059.pdf
-        title: Applying Morphology Generation Models to Machine Translation
-        optional: true
-      -
-        author: Chahuneau et al.
-        url: http://aclweb.org/anthology/D/D13/D13-1174.pdf
-        title: Translating into Morphologically Rich Languages with Synthetic Phrases
-        optional: true
-  -
-    date: 2015-03-12
-    title: Neurons and semantics and stuff
-    reading:
-      -
-        author: Devlin et al.
-        url: http://www.aclweb.org/anthology/P/P14/P14-1129.pdf
-        title: Fast and robust neural network joint models for statistical machine translation
-        optional: true
       -
         author: Chiang et al.
         url: http://www.aclweb.org/anthology/P13-1091
         title: Parsing graphs with hyperedge replacement grammars
         optional: true
   -
-    date: 2015-03-16
-    title: Guest lecture by Alexandra Birch&#58; Translating spoken language
+    date: 2015-03-24
+    title: Decipherment 
   -
-    date: 2015-03-19
-    title: Guest lecture by Bonnie Webber&#58; Handling discourse features in SMT
+    date: 2015-03-27
+    title: Exam review (optional)
+    reading:
+      -
+        url: https://exampapers.ed.ac.uk/record/52180
+        title: Last year's exam (EASE authentication required)
   -
-    date: 2015-03-26
-    title: Decipherment
-  -
-    date: 2015-04-02
+    date: 2015-03-31
     title: The colorful history of machine translation (optional)
+    reading:
+      -
+        author: Jelinek
+        url: http://aclweb.org/anthology/J/J09/J09-4004.pdf
+        title: The dawn of statistical ASR and MT
+        optional: true
+      -
+        author: Liberman
+        url: http://aclweb.org/anthology/J/J10/J10-4001.pdf
+        title: Fred Jelinek
+        optional: true
 

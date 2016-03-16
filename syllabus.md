@@ -5,13 +5,14 @@ title: MT | Syllabus
 active_tab: syllabus
 ---
 
-<div class="alert alert-danger">
-  This is the 2015 syllabus. It may be slightly updated for 2016.
-</div>
-
-Slides will be posted after each lecture. I consider slides to be
-visual aids for the lecture, so I urge you to read the source material
-(especially the textbook) and not to rely extensively on the slides.
+Slides will be posted after each lecture. Slides for lectures that have not
+yet occurred are subject to change. I consider slides to be
+visual aids for the lecture. The purpose of the lecture is to guide you
+towards intuitions about the material, but to really understand the material,
+you must read and interact with it in depth, which you cannot do from the 
+slides. I urge you to read the source 
+material (especially the textbook) and not to rely extensively on the slides,
+for exam preparation.
 
 <table class="table table-striped"> 
   <tbody>
@@ -42,7 +43,7 @@ visual aids for the lecture, so I urge you to read the source material
             <li>
             {% if reading.optional %}<span class="glyphicon glyphicon-star"></span>
             {% else %}{% endif %}
-            {{ reading.author }},
+            {% if reading.author %}{{ reading.author }},{% endif %}
             {% if reading.url %}
             <a href="{{ reading.url }}">{{ reading.title }}</a>
             {% else %}

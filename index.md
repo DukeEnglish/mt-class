@@ -31,6 +31,12 @@ Location
 Lecturer
 : [Adam Lopez](http://homepages.inf.ed.ac.uk/alopez/)
 
+Markers 
+: [Sorcha Gilroy](https://www.inf.ed.ac.uk/people/students/Sorcha_Gilroy.html)
+: [Joachim Fainberg](http://www.inf.ed.ac.uk/people/students/Joachim_Fainberg.html)
+: [Federico Fancellu](http://www.inf.ed.ac.uk/people/students/Federico_Fancellu.html)
+: [Clara Vania](https://www.inf.ed.ac.uk/people/students/Clara_Vania.html)
+
 Office hours
 : Immediately after class meetings or by appointment
 
@@ -41,8 +47,11 @@ Textbook
 : [Statistical Machine Translation](http://www.statmt.org/book/) 
 (<a href="http://statmt.org/book/errata.html">errata</a>) 
 by [Philipp Koehn](http://www.cs.jhu.edu/~phi/).
-Available [online](http://edin.ac/1xIEjYi) 
-or [on loan](http://edin.ac/1vf7H1i) from the University library.
+Available [online](http://discovered.ed.ac.uk/primo_library/libweb/action/display.do?doc=44UOE_ALMA51135030710002466) 
+or [on loan](http://discovered.ed.ac.uk/primo_library/libweb/action/display.do?doc=44UOE_ALMA2178109340002466) from the University library.
+Also available from [amazon](http://www.amazon.co.uk/gp/product/0521874157) or 
+Blackwell's as a [hardcopy](http://bookshop.blackwell.co.uk/jsp/id/Statistical_Machine_Translation/9780521874151) or
+[ebook](http://bookshop.blackwell.co.uk/jsp/id/Statistical_Machine_Translation/E9780511687594).
 
 Course Descriptor
 : [INFR11062](http://www.drps.ed.ac.uk/15-16/dpt/cxinfr11062.htm) \| [MT](http://course.inf.ed.ac.uk/mt/)
