@@ -348,7 +348,7 @@ Ground Rules
 
 On dice, run:
 
-    submit mt 2 answers.pdf myreranker.out authors.txt
+    submit mt 3 answers.pdf myreranker.out authors.txt
 
 ### Acknowledgements
 
