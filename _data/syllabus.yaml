@@ -232,6 +232,18 @@ past:
   -
     date: 2015-03-24
     title: Decipherment 
+    slides: http://www.slideshare.net/alopezfoo/edinburgh-mt-lecture-decipherment
+    reading: 
+      -
+        url: http://www.aclweb.org/anthology/D/D12/D12-1025.pdf
+        title: Large scale decipherment for out-of-domain machine translation
+        author: Dou and Knight
+        optional: true
+      -
+        url: http://www.aclweb.org/anthology/W/W11/W11-1202.pdf
+        title: The Copiale Cipher
+        author: Knight et al.
+        optional: true
   -
     date: 2015-03-27
     title: Exam review (optional)
