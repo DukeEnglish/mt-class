@@ -6,13 +6,9 @@ title: Decoding | Homework 2
 active_tab: hw2 
 ---
 
-<div class="alert alert-info">
-  This assignment is due on 11 Feb at 16:00.
-</div>
-
-<div class="alert alert-warning">
-  <b>Important</b>: you can work in pairs, but you cannot work with the
-  same partner you worked with on assignment 1.
+<div class="alert alert-danger">
+  This page contains the 2016 version of this assignment.
+  The assignments for 2017 are likely to be substantially different.
 </div>
 
 Decoding <span class="text-muted">| Homework 2</span>

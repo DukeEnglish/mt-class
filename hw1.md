@@ -6,6 +6,11 @@ title: Alignment | Homework 1
 active_tab: hw1 
 ---
 
+<div class="alert alert-danger">
+  This page contains the 2016 version of this assignment.
+  The assignments for 2017 are likely to be substantially different.
+</div>
+
 Alignment <span class="text-muted">| Assignment 1</span>
 =============================================================
 

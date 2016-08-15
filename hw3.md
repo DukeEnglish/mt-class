@@ -5,13 +5,9 @@ caption: Image by fdmount
 title: Reranking | Homework 3
 active_tab: hw3 
 ---
-<div class="alert alert-info">
-  This assignment is due on 7 March at 16:00.
-</div>
-
-<div class="alert alert-warning">
-  <b>Important</b>: you can work in pairs, but you cannot work with 
-  a partner you worked with on any previous assignment.
+<div class="alert alert-danger">
+  This page contains the 2016 version of this assignment.
+  The assignments for 2017 are likely to be substantially different.
 </div>
 
 Reranking <span class="text-muted">| Homework 3</span>

@@ -5,6 +5,12 @@ title: MT | Syllabus
 active_tab: syllabus
 ---
 
+<div class="alert alert-danger">
+  This page contains information for the 2016 version of the course.
+  For 2017, the content of the course is likely to be similar, but
+  the form of the course, and particularly the assessment, will change.
+</div>
+
 Slides will be posted after each lecture. Slides for lectures that have not
 yet occurred are subject to change. I consider slides to be
 visual aids for the lecture. The purpose of the lecture is to guide you

@@ -6,6 +6,12 @@ title: Machine translation
 active_tab: main_page 
 ---
 
+<div class="alert alert-danger">
+  This page contains information for the 2016 version of the course.
+  For 2017, the content of the course is likely to be similar, but
+  the form of the course, and particularly the assessment, will change.
+</div>
+
 [Google translate](http://translate.google.com/) instantly
 translates between any pair of over eighty human languages 
 like French and English. How does it do that? Why does it 
