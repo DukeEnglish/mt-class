@@ -6,12 +6,6 @@ title: Machine translation
 active_tab: main_page 
 ---
 
-<div class="alert alert-danger">
-  This page contains information for the 2016 version of the course.
-  For 2017, the content of the course is likely to be similar, but
-  the form of the course, and particularly the assessment, will change.
-</div>
-
 [Google translate](http://translate.google.com/) instantly
 translates between any pair of over eighty human languages 
 like French and English. How does it do that? Why does it 
@@ -26,48 +20,38 @@ machine learning, algorithms, data structures, and formal
 language theory, showing how they apply to a real and difficult
 problem in artificial intelligence.
 
-#### Spring 2016 information
+#### Spring 2017 information
 
-Time 
-: Monday & Thursday, 16:10 to 17:00 
-
-Location
-: 7 George Square, room S.1
+Time and place
+: Lectures on Monday & Thursday, 16:10 to 17:00, Medical School Sydney Smith Lecture Theatre
+: Labs on Tuesdays, 10:00, in weeks 2, 5, 8, and 10, Forrest Hill 3.D01 and 3.D02
 
 Lecturer
 : [Adam Lopez](http://homepages.inf.ed.ac.uk/alopez/)
 
-Markers 
-: [Sorcha Gilroy](https://www.inf.ed.ac.uk/people/students/Sorcha_Gilroy.html)
-: [Joachim Fainberg](http://www.inf.ed.ac.uk/people/students/Joachim_Fainberg.html)
-: [Federico Fancellu](http://www.inf.ed.ac.uk/people/students/Federico_Fancellu.html)
-: [Clara Vania](https://www.inf.ed.ac.uk/people/students/Clara_Vania.html)
+Teaching assistant, markers, and demonstrators
+: TBA
 
 Office hours
-: Immediately after class meetings or by appointment
+: In the hour before lecture or by appointment
 
 Discussion Forum
-: [Piazza](https://piazza.com/ed.ac.uk/spring2016/infr11062/home)
+: [Piazza](https://piazza.com/ed.ac.uk/spring2017/infr11133/home)
 
 Textbook
 : [Statistical Machine Translation](http://www.statmt.org/book/) 
 (<a href="http://statmt.org/book/errata.html">errata</a>) 
 by [Philipp Koehn](http://www.cs.jhu.edu/~phi/).
-Available [online](http://discovered.ed.ac.uk/primo_library/libweb/action/display.do?doc=44UOE_ALMA51135030710002466) 
-or [on loan](http://discovered.ed.ac.uk/primo_library/libweb/action/display.do?doc=44UOE_ALMA2178109340002466) from the University library.
+Available from the University library.
 Also available from [amazon](http://www.amazon.co.uk/gp/product/0521874157) or 
 Blackwell's as a [hardcopy](http://bookshop.blackwell.co.uk/jsp/id/Statistical_Machine_Translation/9780521874151) or
 [ebook](http://bookshop.blackwell.co.uk/jsp/id/Statistical_Machine_Translation/E9780511687594).
 
 Course Descriptor
-: [INFR11062](http://www.drps.ed.ac.uk/15-16/dpt/cxinfr11062.htm) \| [MT](http://course.inf.ed.ac.uk/mt/)
+: [INFR11133](http://www.drps.ed.ac.uk/16-17/dpt/cxinfr11133.htm) \| [MT](http://course.inf.ed.ac.uk/mt/)
 
 Assessment
-: * Three practical assignments (10% each)
-   1. Alignment, due 28 Jan 16:00
-   2. Decoding, due 11 Feb 16:00
-   3. Reranking, due 7 Mar 16:00
-* Final exam (70%)
+: Three practical assignments (33% each), due 9 Feb, 9 March, and 30 March.
 
 The course will follow the school-wide [late coursework policy](http://web.inf.ed.ac.uk/infweb/student-services/ito/admin/coursework-projects/late-coursework-extension-requests)
 and [academic conduct policy](http://web.inf.ed.ac.uk/infweb/admin/policies/academic-misconduct).

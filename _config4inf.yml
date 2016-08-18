@@ -1,4 +1,4 @@
-exclude: ['README.md', 'stack-decoder', ]
+exclude: ['README.md', 'hw1', 'hw2', 'hw3']
 timezone: GMT
 markdown: kramdown
 destination: ../inf-mt

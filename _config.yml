@@ -1,4 +1,4 @@
-exclude: ['README.md', 'project.md', 'lin10.md', 'stack-decoder', ]
+exclude: ['README.md', 'hw1', 'hw2', 'hw3', ]
 timezone: GMT
 markdown: kramdown
 encoding: ASCII-8BIT

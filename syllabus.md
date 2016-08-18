@@ -7,8 +7,8 @@ active_tab: syllabus
 
 <div class="alert alert-danger">
   This page contains information for the 2016 version of the course.
-  For 2017, the content of the course is likely to be similar, but
-  the form of the course, and particularly the assessment, will change.
+  For 2017, the content of the course will be similar, but
+  it is likely to be substantially reorganized.
 </div>
 
 Slides will be posted after each lecture. Slides for lectures that have not
@@ -17,7 +17,7 @@ visual aids for the lecture. The purpose of the lecture is to guide you
 towards intuitions about the material, but to really understand the material,
 you must read and interact with it in depth, which you cannot do from the 
 slides. I urge you to read the source 
-material (especially the textbook) and not to rely extensively on the slides,
+material (especially the textbook) and not to rely extensively on the slides
 for exam preparation.
 
 <table class="table table-striped"> 
