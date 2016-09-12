@@ -24,7 +24,7 @@ problem in artificial intelligence.
 
 Time and place
 : Lectures on Monday & Thursday, 16:10 to 17:00, Medical School Sydney Smith Lecture Theatre
-: Labs on Tuesdays, 10:00, in weeks 2, 5, 8, and 10, Forrest Hill 3.D01 and 3.D02
+: Labs on Tuesdays, 10:00, in weeks 2, 5, 8, and 10, Forrest Hill 1.B30
 
 Lecturer
 : [Adam Lopez](http://homepages.inf.ed.ac.uk/alopez/)
