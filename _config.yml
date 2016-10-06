@@ -1,4 +1,4 @@
-exclude: ['README.md', 'hw1', 'hw2', 'hw3', ]
+exclude: ['README.md']
 timezone: GMT
 markdown: kramdown
 encoding: ASCII-8BIT
