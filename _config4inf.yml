@@ -6,4 +6,4 @@ encoding: ASCII-8BIT
 defaults:
   -
     values:
-      layout: "informatics"
+      layout: "local"
