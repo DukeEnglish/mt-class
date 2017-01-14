@@ -2,8 +2,8 @@ exclude: ['README.md', 'hw1', 'hw2', 'hw3', 'stack-decoder']
 timezone: GMT
 markdown: kramdown
 destination: ../inf-mt
-encoding: ASCII-8BIT
+encoding: UTF-8 
 defaults:
   -
     values:
-      layout: "local"
+      layout: "common"

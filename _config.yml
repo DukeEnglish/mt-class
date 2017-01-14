@@ -1,8 +1,8 @@
 exclude: ['README.md']
 timezone: GMT
 markdown: kramdown
-encoding: ASCII-8BIT
+encoding: UTF-8
 defaults:
   -
     values:
-      layout: "local"
+      layout: "common"
