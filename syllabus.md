@@ -5,64 +5,60 @@ title: MT | Syllabus
 active_tab: syllabus
 ---
 
-<div class="alert alert-danger">
-  This page contains information for the 2016 version of the course.
-  For 2017, the content of the course will be similar, but
-  it is likely to be substantially reorganized.
-</div>
+Lecture materials will be posted after each lecture.
 
-Slides will be posted after each lecture. Slides for lectures that have not
-yet occurred are subject to change. I consider slides to be
-visual aids for the lecture. The purpose of the lecture is to guide you
-towards intuitions about the material, but to really understand the material,
-you must read and interact with it in depth, which you cannot do from the 
-slides. I urge you to read the source 
-material (especially the textbook) and not to rely extensively on the slides
-for exam preparation.
+The course is being updated, but 
+[Last year's materials](2016syllabus.html) are available
+for reference.
 
 <table class="table table-striped"> 
-  <tbody>
+  <thead>
     <tr>
-      <th>Date</th>
-      <th>Topic</th>
-      <th>Readings (<span class="glyphicon glyphicon-star"></span> = optional)</th>
+      <th>Week</th>
+      <th>Day</th>
+      <th>Plan</th>
     </tr>
-    {% for lecture in site.data.syllabus.past %}
+  </thead>
+  <tfoot>
     <tr>
-      <td>{{ lecture.date | date: "%b %d" }}</td>
-      <td>
-        {% if lecture.slides %}<a href="{{ lecture.slides }}">{{ lecture.title }}</a>
-        {% else %}{{ lecture.title }}{% endif %}
-      {% if lecture.links %}
-        {% for link in lecture.links %}
-          <p><a href="{{ link.url }}">{{ link.text }}</a></p>
-        {% endfor %}
-      {% endif %}
-  {% if lecture.language %}
-	<br/><a href="lin10.html">Language in 10</a>: <a href="{{ lecture.language_slides }}">{{ lecture.language }}</a>
-        {% endif %}
-      </td>
-      <td>
-        {% if lecture.reading %}
-          <ul class="fa-ul">
-          {% for reading in lecture.reading %}
-            <li>
-            {% if reading.optional %}<span class="glyphicon glyphicon-star"></span>
-            {% else %}{% endif %}
-            {% if reading.author %}{{ reading.author }},{% endif %}
-            {% if reading.url %}
-            <a href="{{ reading.url }}">{{ reading.title }}</a>
-            {% else %}
-            {{ reading.title }} 
-            {% endif %}
-            </li>
+      <th>Week</th>
+      <th>Day</th>
+      <th>Plan</th>
+    </tr>
+  </tfoot>
+  <tbody>
+    {% for week in site.data.syllabus %}
+    <tr>
+      <td rowspan="{{ week.plan.size }}">{{ week.name }}</td>
+      {% for day in week.plan %}
+        {% unless forloop.first == true %}
+          </tr>
+          <tr>
+        {% endunless %}
+        <td>{{ day.date | date: "%b %d" }}</td>
+        <td>
+          {% for header in day.header %}
+            {% if header.type == "lecture" %}<span class="label label-primary">Lecture</span>{% endif %}
+            {% if header.type == "lab" %}<span class="label label-success">Lab</span>{% endif %}
+            {% if header.type == "coursework" %}<span class="label label-danger">Coursework</span>{% endif %}
+            {{ header.title }}
+            <br/>
           {% endfor %}
-          </ul>
-        {% endif %}
-      </td>
+          {% if day.items %}
+            <ul>
+            {% for item in day.items %}
+            <li>
+              {% if item.url %}<a href="{{ item.url }}">{% endif %}
+                {{ item.description }}
+              {% if item.url %}</a>{% endif %}
+            </li> 
+            {% endfor %}
+            </ul>
+          {% endif %}
+        </td>
+      {% endfor %}
     </tr>
     {% endfor %}
-
   </tbody>
 </table>
 
