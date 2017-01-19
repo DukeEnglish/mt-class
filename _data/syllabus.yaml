@@ -5,6 +5,21 @@
     header: 
     - title: "Introduction"
       type: lecture
+    items:
+    - description: Piazza signup
+      url: https://piazza.com/ed.ac.uk/spring2017/infr11133
+    - description: Lecture recording
+      url: https://ed.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0ef7477a-d935-4c87-a27c-2165714db6a1
+    - description: Automating knowledge acquition for machine translation (Knight)
+      url: http://www.isi.edu/natural-language/mt/aimag97.pdf
+    - description: Basic probability theory (Goldwater)
+      url: http://homepages.inf.ed.ac.uk/sgwater/math_tutorials.html
+    - description: "1A. Why probability? (video lecture)"
+      url: https://ed.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3fb51ece-876a-4ea9-95fc-b487a6c4719f
+    - description: "1B. Brief review of probability (video lecture)"
+      url: https://ed.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=19215ac6-1aaa-4fe2-af83-ee57f8e8d258
+    - description: "1C. n-gram language models (video lecture)"
+      url: https://ed.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=58f5a813-9106-4934-9257-986f01ef9fb6
   - date: 2017-01-19
     header: 
     - title: "Probability, language models, and conditional language models"

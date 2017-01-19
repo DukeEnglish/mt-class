@@ -45,6 +45,8 @@ for reference.
             <br/>
           {% endfor %}
           {% if day.items %}
+            <br/>
+            Resources
             <ul>
             {% for item in day.items %}
             <li>
