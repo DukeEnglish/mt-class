@@ -30,12 +30,15 @@ apply to a real and difficult problem in artificial intelligence.
 #### Teaching Team
 
 - [Adam Lopez](http://homepages.inf.ed.ac.uk/alopez/) (Office hours: 2:30 Mondays, Absorb Cafe, starting week 3)
+- [Alham Aji](http://www.inf.ed.ac.uk/people/students/Alham_Aji.html)
 - [Sameer Bansal](https://0xsameer.github.io/)
+- [Toms Bergmanis](https://www.inf.ed.ac.uk/people/students/Toms_Bergmanis.html)
 - [Nikolay Bogoychev](http://homepages.inf.ed.ac.uk/s1031254/)
 - [Anna Currey](http://homepages.inf.ed.ac.uk/s1639783/)
 - [Soňa Galovičová](http://homepages.inf.ed.ac.uk/s1206522/)
 - [Sorcha Gilroy](https://www.inf.ed.ac.uk/people/students/Sorcha_Gilroy.html)
 - [Jonathan Mallinson](https://www.inf.ed.ac.uk/people/students/Jonathan_Mallinson.html)
+- [Joana Ribeiro](https://www.inf.ed.ac.uk/people/students/Joana_Ribeiro.html)
 - [Ida Szubert](https://www.inf.ed.ac.uk/people/staff/Kataryna_Szubert.html)
 - [Clara Vania](https://claravania.github.io/)
 
@@ -59,7 +62,7 @@ the following books.
 
 #### Assessment
 
-Three practical assignments, each worth 1/3 of the overall course marks. Due 9 Feb, 9 March, and 6 April.
+Three practical assignments, each worth 1/3 of the overall course marks. Due 9 Feb, 13 March, and 13 April.
 
 The course will follow the school-wide [late coursework policy](http://web.inf.ed.ac.uk/infweb/student-services/ito/admin/coursework-projects/late-coursework-extension-requests)
 and [academic conduct policy](http://web.inf.ed.ac.uk/infweb/admin/policies/academic-misconduct).

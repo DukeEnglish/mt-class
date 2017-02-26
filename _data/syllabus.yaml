@@ -62,39 +62,73 @@
     header: 
     - title: "Phrase-based translation and decoding"
       type: lecture
+    items:
+    - description: Lecture recording
+      url: https://ed.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=51d59c7d-8f1a-4b56-aced-a11f1cf6ca4d
+    - description: "Statistical phrase-based translation (Koehn et al.)"
+      url: http://aclweb.org/anthology/N/N03/N03-1017.pdf
+    - description: "The complexity of phrase alignment problems (DeNero and Klein)"
+      url: http://aclweb.org/anthology/P/P08/P08-2007.pdf
   - date: 2017-02-02
     header: 
     - title: "Evaluation of translation systems"
       type: lecture
+    items:
+    - description: Lecture recording (no sound)
+      url: https://ed.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5b090a04-8380-4da9-b4ac-c408681b7d9c
+    - description: "Models of translation competitions (Hopkins and May)"
+      url: http://www.aclweb.org/anthology/P13-1139
+    - description: "Ten Years of WMT Evaluation Campaigns: Lessons Learnt (Bojar et al.)"
+      url: http://www.cracking-the-language-barrier.eu/wp-content/uploads/Bojar-Federmann-etal.pdf
 - name: Week 4
   plan:
   - date: 2017-02-06
     header: 
     - title: "Words and Morphology"
       type: lecture
+    items:
+    - description: Lecture recording
+      url: https://ed.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e7994da9-5ade-402e-80dc-9c1a3a6fac99
+    - description: "Bender, chapters 2&ndash;4"
   - date: 2017-02-09
     header: 
     - title: "Coursework 1 due at 4pm"
       type: coursework
-    - title: "Parameterizing probabilistic models"
+    - title: "Morphology (continued); maximum entropy models"
       type: lecture
+    items: 
+    - description: Lecture recording
+      url: https://ed.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=1e77f76d-b2a1-41f3-9152-5a99c6170462
 - name: Week 5
   plan:
   - date: 2017-02-13
     header: 
     - title: "Neural probabilistic language models"
       type: lecture
+    items:
+    - description: Lecture recording
+      url: https://ed.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=325eadc6-ce7b-43b8-b639-b9ce394d697e
+    - description: A neural probabilistic language model (Bengio et al.)
+      url: http://www.ai.mit.edu/projects/jmlr/papers/volume3/tmp/bengio03a.pdf
   - date: 2017-02-14
     header: 
     - title: "Neural probabilistic language models"
       type: lab 
+    items:
+    - description: Lab materials
+      url: https://github.com/INFR11133/lab2
   - date: 2017-02-16
     header: 
     - title: "Conditional neural language models"
       type: lecture
+    items:
+    - description: Lecture recording
+      url: https://ed.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f55ca584-e51e-4d52-ba53-299c1b93e593
+    - description: "Neural machine translation by jointly learning to align and translate (Bahdanau et al.)"
+      url: https://arxiv.org/abs/1409.0473
 - plan:
   - header:
-    - title: No class this week
+    - title: No class the week of Feb 20
 - name: Week 6
   plan:
   - date: 2017-02-27

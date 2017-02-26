@@ -6,17 +6,8 @@ title: Decoding | Homework 1
 active_tab: hw1 
 ---
 
-<div class="alert alert-info">
-This assignment is due at 16:00 GMT on 9 Feb, 2017. Late submissions will
-receive a mark of zero, under the 
-<a href="http://web.inf.ed.ac.uk/infweb/student-services/ito/admin/coursework-projects/late-coursework-extension-requests">Informatics late policy</a>.
-An assignment submitted at 16:01 GMT on 9 Feb is considered late.
-
-Before you start, please read this page carefully. Submissions that do not
-follow the Ground Rules (at the bottom of the page)
-will receive a mark of zero.
-
-
+<div class="alert alert-warning">
+This assignment is over!
 </div>
 
 
@@ -67,8 +58,8 @@ Part 1: Getting Started [10 marks]
 You will need two things for this assignment. The first is an answer 
 sheet on which you are required to submit your answers to the inline 
 questions below. Follow 
-[this link](https://www.overleaf.com/read/bkqsppbgkqnn) and clone the 
-document to get started.
+[this link](https://www.overleaf.com/latex/templates/infr1113-homework-1-template/bkqsppbgkqnn) and open the 
+template to get started.
 
 The second is code and data. At the dice commandline, 
 clone the coursework repository:
@@ -308,10 +299,17 @@ consist of the best choice of a pair $$h(i,e')$$ and phrase $$e_1...e_ke$$
 The first term is the probability of $$h(i,e')$$, the second is the probability
 of translating $$f_{i+1} ... f_j$$ by $$e_1...e_ke$$, and the remaining terms compute the
 language model probability of the new English words by iterating over them.
-All that is left is to define a base case:
+All that is left is to define a base case, using $$\epsilon$$ to denote
+an empty string:
 
 <p class="text-center">
-$$h(0,e) = \left\{ \begin{array}{ll} 1 && \textrm{if }e=START\\ 0 && \textrm{otherwise} \end{array} \right.$$
+$$h(0,e) = \left\{ \begin{array}{ll} \epsilon && \textrm{if }e=START\\ \textrm{undefined} && \textrm{otherwise} \end{array} \right.$$
+</p>
+
+Note that this implies:
+
+<p class="text-center">
+$$p(h(0,e)) = \left\{ \begin{array}{ll} 1 && \textrm{if }e=START\\ 0 && \textrm{otherwise} \end{array} \right.$$
 </p>
 
 Using induction, convince yourself that this recursion defines
@@ -435,7 +433,7 @@ until you can no longer obtain any improvements.
 
 1. [4 marks] How do changes in these parameters affect the resulting log-probabilities? 
 1. [2 marks] How do they affect speed?
-1. [2 marks] How do they affect the translations?
+1. [2 marks] How do they affect the translations? Do the translations change? Do they make more sense? Are they more fluent? Give examples.
 1. [2 marks] What is the maximum log-probability you can obtain?
 
 Part2: Local Reordering [50 marks]
@@ -562,8 +560,8 @@ un $$\bullet$$ Comité de $$\bullet$$ sélection. There are three possible order
 adjacent phrases:
 
 1. un $$\bullet$$ Comité de $$\bullet$$ sélection  (the original order)
-1. un $$\bullet$$ sélection $$\bullet$$ Comité de  (swapping the 1st and 2nd phrase)
-1. Comité de $$\bullet$$ un $$\bullet$$ sélection  (swapping the 2nd and 3rd phrase)
+1. un $$\bullet$$ sélection $$\bullet$$ Comité de  (swapping the 2nd and 3rd phrase)
+1. Comité de $$\bullet$$ un $$\bullet$$ sélection  (swapping the 1st and 2nd phrase)
 
 In the full space of permutations, more orders are possible, but I’m not 
 asking you to do this here (you might try it for the challenge part of the 
@@ -580,7 +578,7 @@ Now consider segmentation 7. Again, 3 permutations are possible:
 1. un $$\bullet$$ de sélection $$\bullet$$ Comité   (swap 2nd and 3rd)
 1. Comité $$\bullet$$ un $$\bullet$$ de sélection   (swap 1st and 2nd)
 
-And finally, for permutation 8:
+And finally, for segmentation 8, 5 permutations are possible:
 
 1. un $$\bullet$$ Comité $$\bullet$$ de $$\bullet$$ sélection   (original order)
 1. un $$\bullet$$ Comité $$\bullet$$ sélection $$\bullet$$ de   (swap 3rd and 4th phrase)
@@ -607,6 +605,10 @@ interact with any other, there are only two cases to reason about:
    1. By extending a similar partial translation covering a shorter prefix; or 
    1. By filling in a gap in the set of translated words that was 
       created by translating the second in pair of phrases first. 
+      For example, in the third permutation of segmentation 8, 
+      there is a gap after we translate "de", because we have skipped
+      translating "Comité". This gap is filled in when we translate
+      "Comité".
 1. We can have a partial translation that covers the first $$i$$ words of 
    the French, except those from $$k$$ to $$j$$. This case is the antecedent
    of 1.2. above. This case can only result if we previously had a 
@@ -653,7 +655,7 @@ improvements.
 
 * [4 marks] How do changes in these parameters affect the resulting log-probabilities? 
 * [2 marks] How do they affect speed? 
-* [2 marks] How do they affect the translations?
+* [2 marks] How do they affect the translations? Do the translations change? Do they make more sense? Are they more fluent? Give examples.
 * [2 marks] What is the maximum log-probability you can obtain?
 
 Part 3: Beyond local reordering [40 marks]
@@ -773,7 +775,7 @@ Ground Rules
 * You must submit five files. Any files with names other than these will be ignored.
     1. `answers.pdf`: A file containing your answers to Questions 1 through 
        11 in an A4 PDF. Your file must be written in LaTeX using 
-       [this template](https://www.overleaf.com/read/bkqsppbgkqnn), which
+       [this template](https://www.overleaf.com/latex/templates/infr1113-homework-1-template/bkqsppbgkqnn), which
        you should clone and edit to provide your answers. Answers provided in
        any other format will receive a mark of zero. Your answers **must
        not exceed two pages**, so be concise. You are however permitted
@@ -781,10 +783,14 @@ Ground Rules
        pages. They should be readable. They should also be numbered 
        and the text should refer to these numbers.
     1. `part2.out`: The highest-probability translations of the input that
-       you can produce using your Part 2 decoder.
+       you can produce using your Part 2 decoder. Note that I want the output
+       of your decoder (`part2.py`), **not** the output of 
+       `compute-model-score`. 
     1. `part2.py`: Your implementation of the Part 2 decoder. 
     1. `part3.out`: The highest-probability translations of the input that
-       you can produce using your Part 3 decoder.
+       you can produce using your Part 3 decoder. Note that I want the output
+       of your decoder (`part3.py`), **not** the output of 
+       `compute-model-score`.
     1. `part3.py`: Your implementation of the Part 3 decoder. 
 
 * Questions that are not answered will receive no marks. Even if you 
