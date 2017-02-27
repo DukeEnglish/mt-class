@@ -90,10 +90,6 @@ Get the code.
 
     git clone https://github.com/INFR11133/hw2.git
 
-<div class="alert alert-warning">
-TODO: Before release, let's make sure the directory names below sync up with the repo.
-</div>
-
 You'll find a directory `data` containing English and
 Japanese parallel data (from [a tutorial](https://github.com/neubig/nmt-tips) that you may find helpful), 
 a `model` directory containing a pretrained 
@@ -116,43 +112,37 @@ Japanese-to-English neural translation model, and three python files:
    machine translation system works, at a level of detail that you can't get
    from lectures or reading.
    
-<div class="alert alert-warning">
-TODO: Add walkthrough here something like:
 
-DONE: please review
-</div>
-```
-cd translate
-source activate mtenv
+    cd translate
+    source activate mtenv
+    
+    ipython
+    In [1]: %run nmt_translate.py
 
-ipython
-In [1]: %run nmt_translate.py
-```
 You should see a message indicating that a pre-trained model has been loaded.
-To generate predictions using this model, do:
-```
-In [2]: _ = predict(s=10000, num=10)
-```
-This displays predictions on the first 10 japanese sentences of the dev set.
+To translate using this model, do:
+
+    In [2]: _ = predict(s=10000, num=10)
+
+This displays translations of the first 10 japanese sentences of the dev set.
 To view predictions on training set do:
-```
-In [3]: _ = predict(s=0, num=10)
-```
 
-Most of these predictions will be poor. To view better predictions, we can add display filters which check the ```precision``` and ```recall``` of each translation.
+    In [3]: _ = predict(s=0, num=10)
+
+Most of these translations will be poor. To find better translations 
+from this model, we can add filters based on precision and recall of 
+each translation with respect to a reference translation.
 The following statement will only display predictions with ```recall >= 0.5```
-```
-In [4]: _ = predict(s=10000, num=10, r_filt=.5)  
-```
-The following statement will only display predictions with ```precision >= 0.5```
-```
-In [5]: _ = predict(s=10000, num=10, p_filt=.5)
-```
-This model is still quite basic and trained on a small dataset, and therefore the quality of translations is poor.
 
-<!-- <div class="alert alert-warning">
-TODO: Tell them what each step means. Just enough to get them oriented. 
-</div> -->
+    In [4]: _ = predict(s=10000, num=10, r_filt=.5)  
+
+The following statement will only display predictions with ```precision >= 0.5```
+
+    In [5]: _ = predict(s=10000, num=10, p_filt=.5)
+
+This model is still quite basic and trained on a small dataset, so the 
+quality of translations is poor. Your goal will be to see if you can
+improve it.
 
 The current implementation in `enc_dec.py` encodes the sentence using a 
 bidirectional LSTM: one passing over the input sentence from left-to-right,
@@ -177,19 +167,17 @@ a particular function does, refer to the [chainer documentation](http://docs.cha
 (However, explain the code in terms of its effect on the MT model; don't
 simply copy and paste function descriptions from the documentation).
  
-In preparing the training data, word types that appear only once are replaced by a special token, _UNK. This prevents the vocabulary from growing out of hand, and enables the model to handle unknown words in new test sentences (which may be addressed by postprocessing). But what effect does this replacement have on the properties of our language data?
-
-<div class="alert alert-warning">
-TODO: name the files they should look at.
-
-[TAs]: Modified the sentence above.
-</div>
+In preparing the training data, word types that appear only once are 
+replaced by a special token, _UNK. This prevents the vocabulary from 
+growing out of hand, and enables the model to handle unknown words in new 
+test sentences (which may be addressed by postprocessing). But what 
+effect does this replacement have on the properties of our language data?
 
 __Q2. [10 marks]__ Examine the parallel data and answer the following questions.
 
-1. What is the distribution of sentence lengths in the English and 
-   Japanese? 
-1. How are sentence lengths correlated?
+1. Plot the distribution of sentence lengths in the English and 
+   Japanese and there corrletion. What do you infer from this about 
+   translating between these languages? 
 1. How many word tokens are in the English data? In the Japanese?
 1. How many word types are in the English data? In the Japanese data?
 1. How many word tokens will be replaced by _UNK in English? In Japanese?
@@ -229,7 +217,11 @@ These are alternatives to the one the decoder chooses.
    to do beam search---that is, to consider multiple possible translations
    at each time step---as you did for a phrase-based decoder in 
    [coursework 1](http://www.inf.ed.ac.uk/teaching/courses/mt/hw1.html).
+   __NOTE__: You needn't implement beam search. The purpose of this 
+   question is simply for you to think through and clearly explain how
+   you would do it.
 1. Could you implement dynamic programming for this model? Why or why not?
+   Again, you needn't implement this.
 
 The next two questions ask you to modify the model and retrain it. 
 Implementing the modifications will not take you very long, but retraining 
@@ -238,6 +230,7 @@ the model will.
 __NOTE__. I recommend that test your modifications by retraining
 on a small subset of the data (e.g. a thousand sentences). To do that, you should change the ```USE_ALL_DATA``` setting in ```nmt_config.py``` file to False. The results  will not be very good; your goal is simply to confirm that the change does not break the code and that it appears to behave sensibly. This is simply a sanity check, and a useful time-saving engineering test when
 you're working with computationally expensive models like neural MT.
+For your final models, you should train on the entire training set.
 
 __Q5. [10 marks]__ Experiment with _one_ of the following changes to the
 model, and explain how it affects the perplexity, BLEU, 
@@ -251,38 +244,36 @@ state the number you used.
 1. Change the number of hidden units by a substantial amount (e.g.
    by halving or doubling the number, not adding or subtracting one).
 
-To train a new model, you have to modify ```nmt_config.py``` with your required
-settings - the number of layers you wish to use, layer width, number of epochs and a name for your experiment.
+To train a new model, you have to modify ```nmt_config.py``` with your 
+required settings - the number of layers you wish to use, layer width, 
+number of epochs and a name for your experiment.
 
-As an example, let's define a new model with the size of hidden units in the LSTM(s) as 100, and 2 layers for both the encoder and the decoder:
-```
-# number of LSTM layers for encoder
-num_layers_enc = 2
-# number of LSTM layers for decoder
-num_layers_dec = 2
-# number of hidden units per LSTM
-# both encoder, decoder are similarly structured
-hidden_units = 100
-```
+As an example, let's define a new model with the size of hidden units in the 
+LSTM(s) as 100, and 2 layers for both the encoder and the decoder:
+
+    # number of LSTM layers for encoder
+    num_layers_enc = 2
+    # number of LSTM layers for decoder
+    num_layers_dec = 2
+    # number of hidden units per LSTM
+    # both encoder, decoder are similarly structured
+    hidden_units = 100
+
 And set the number of epochs equal 1 or more (otherwise the model will not train):
-```
-# Training EPOCHS
-NUM_EPOCHS = 10
-```
+
+    # Training EPOCHS
+    NUM_EPOCHS = 10
+
 To start training a model with updated parameters execute the bash script:
-```
-./run_exp.bat 
-```
-After each epoch, the model file is saved to disk. The model file name includes the parameters used for training. As an example, with the above settings, the model and the log file names will be:
-```
-lamtran_ja_en_model_10500/seq2seq_10000sen_2-2layers_100units_{EXP_NAME}_NO_ATTN.model
-lamtran_ja_en_model_10500/train_10000sen_2-2layers_100units_{EXP_NAME}_NO_ATTN.log
-```
-<!-- <div class="alert alert-warning">
-TODO: there should be some explanatory text here that explains how to
-trigger retraining and how the models are named, what happens to the
-files, etc.
-</div> -->
+
+    ./run_exp.bat 
+
+After each epoch, the model file is saved to disk. The model file name 
+includes the parameters used for training. As an example, with the above 
+settings, the model and the log file names will be:
+
+    model/seq2seq_10000sen_2-2layers_100units_{EXP_NAME}_NO_ATTN.model
+    model/train_10000sen_2-2layers_100units_{EXP_NAME}_NO_ATTN.log
 
 __Q6. [10 marks]__ An important but simple technique for working with
 neural models is _dropout_, which must be applied in a particular way
@@ -318,22 +309,6 @@ __Q8. [10 marks]__ Retrain your decoder, and again explain how the change
 affects results compared to the baseline in terms of perplexity, BLEU, and
 the actual translations. 
 
-<!-- <div class="alert alert-warning">
-TODO: Explain here how to visualize the attention vectors. (e.g. what function
-to call.
-
-****************FOR ADAM:
-We added the fonts folder to the github repo. Does this break any licensing clause?
-
-To support japanese font in matplotlib, we need to be download appropriate font types.
-We have downloaded 
-Refer to http://stackoverflow.com/questions/23197124/display-non-ascii-japanese-characters-in-pandas-plot-legend
-And download from:
-http://ipafont.ipa.go.jp/old/ipafont/download.html#en
-http://ipafont.ipa.go.jp/old/ipafont/IPAfont00303.php
-</div> -->
-
-
 __Q9. [10 marks]__ Visualize the evolution of the attention vectors for
 five decoded sentences, using the provided code. Do they seem reasonable?
 Why or why not?
@@ -343,16 +318,14 @@ Japanese words to do this effectively (use Google Translate).
 We provide a function, ```plot_attention``` to plot attention vectors. 
 A plot will be generated and stored in the model directory. To do this 
 set ```plot=True``` in the ```predict``` function.
-```
-_ = predict(s=10000, num=1, plot=True)
 
-```
+    _ = predict(s=10000, num=1, plot=True)
+
+
 This will output a heatmap of the attention vectors and save the plot 
 as ```lamtran_ja_en_data_10500/sample_10000_plot.png```
 
-<div class="alert alert-warning">
-TODO: Adam - We have added a sample image to the repo, can you display it in Markdown?
-</div>
+<img src="assets/img/sample_10033_plot.png" class="img-responsive" alt="Responsive image">
 
 Possible Extensions
 -------------------
@@ -427,15 +400,9 @@ Ground Rules
   since articulating your questions is often a good
   way to figure out what you do and don't know.
 
-<div class="alert alert-warning">
-TODO: Create and publish overleaf template, once questions are finalized.
-
-TODO: Which data should they translate for the final version?
-</div>
-
 * You must submit these files **and only these files**. 
     1. `answers.pdf`: A file containing your answers to Questions 1 through 
-       9 in an A4 PDF. Your file must be written in LaTeX using this template, 
+       9 in an A4 PDF. Your file must be written in LaTeX using the overleaf template, 
        which you should clone and edit to provide your answers. Answers 
        provided in any other format will receive a mark of zero. Your 
        answers must not exceed three pages, so be concise. You are 
