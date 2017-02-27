@@ -318,17 +318,6 @@ __Q8. [10 marks]__ Retrain your decoder, and again explain how the change
 affects results compared to the baseline in terms of perplexity, BLEU, and
 the actual translations. 
 
-We provide a function, ```plot_attention``` to plot attention vectors. A plot will be generated and stored in the model directory. To do this set ```plot=True``` in the ```predict``` function.
-```
-_ = predict(s=10000, num=1, plot=True)
-
-```
-This will output a heatmap of the attention vectors and save the plot as ```lamtran_ja_en_data_10500/sample_10000_plot.png```
-
-<div class="alert alert-warning">
-TODO: Adam - We have added a sample image to the repo, can you display it in Markdown?
-</div>
-
 <!-- <div class="alert alert-warning">
 TODO: Explain here how to visualize the attention vectors. (e.g. what function
 to call.
@@ -350,6 +339,20 @@ five decoded sentences, using the provided code. Do they seem reasonable?
 Why or why not?
 Base your argument in evidence from the data. You'll need to understand the 
 Japanese words to do this effectively (use Google Translate).
+
+We provide a function, ```plot_attention``` to plot attention vectors. 
+A plot will be generated and stored in the model directory. To do this 
+set ```plot=True``` in the ```predict``` function.
+```
+_ = predict(s=10000, num=1, plot=True)
+
+```
+This will output a heatmap of the attention vectors and save the plot 
+as ```lamtran_ja_en_data_10500/sample_10000_plot.png```
+
+<div class="alert alert-warning">
+TODO: Adam - We have added a sample image to the repo, can you display it in Markdown?
+</div>
 
 Possible Extensions
 -------------------
