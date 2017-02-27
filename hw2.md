@@ -323,7 +323,7 @@ set ```plot=True``` in the ```predict``` function.
 
 
 This will output a heatmap of the attention vectors and save the plot 
-as ```lamtran_ja_en_data_10500/sample_10000_plot.png```
+as ```model/sample_10000_plot.png```
 
 <img src="assets/img/sample_10033_plot.png" class="img-responsive" alt="Responsive image">
 
