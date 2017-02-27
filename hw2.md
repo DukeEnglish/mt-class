@@ -118,15 +118,41 @@ Japanese-to-English neural translation model, and three python files:
    
 <div class="alert alert-warning">
 TODO: Add walkthrough here something like:
+
+DONE: please review
 </div>
+```
+cd translate
+source activate mtenv
 
-    ipython
-    % run nmt_translate.py
-    % _ = predict(100, 10)
+ipython
+In [1]: %run nmt_translate.py
+```
+You should see a message indicating that a pre-trained model has been loaded.
+To generate predictions using this model, do:
+```
+In [2]: _ = predict(s=10000, num=10)
+```
+This displays predictions on the first 10 japanese sentences of the dev set.
+To view predictions on training set do:
+```
+In [3]: _ = predict(s=0, num=10)
+```
 
-<div class="alert alert-warning">
+Most of these predictions will be poor. To view better predictions, we can add display filters which check the ```precision``` and ```recall``` of each translation.
+The following statement will only display predictions with ```recall >= 0.5```
+```
+In [4]: _ = predict(s=10000, num=10, r_filt=.5)  
+```
+The following statement will only display predictions with ```precision >= 0.5```
+```
+In [5]: _ = predict(s=10000, num=10, p_filt=.5)
+```
+This model is still quite basic and trained on a small dataset, and therefore the quality of translations is poor.
+
+<!-- <div class="alert alert-warning">
 TODO: Tell them what each step means. Just enough to get them oriented. 
-</div>
+</div> -->
 
 The current implementation in `enc_dec.py` encodes the sentence using a 
 bidirectional LSTM: one passing over the input sentence from left-to-right,
@@ -151,15 +177,12 @@ a particular function does, refer to the [chainer documentation](http://docs.cha
 (However, explain the code in terms of its effect on the MT model; don't
 simply copy and paste function descriptions from the documentation).
  
-You may have noticed that in preparing the training
-data, word types that appear only once are replaced by a special token,
-_UNK. This prevents the vocabulary from growing out of hand, and enables
-the model to handle unknown words in new test sentences (which may be 
-addressed by postprocessing). But what effect does this replacement have
-on the properties of our language data?
+In preparing the training data, word types that appear only once are replaced by a special token, _UNK. This prevents the vocabulary from growing out of hand, and enables the model to handle unknown words in new test sentences (which may be addressed by postprocessing). But what effect does this replacement have on the properties of our language data?
 
 <div class="alert alert-warning">
 TODO: name the files they should look at.
+
+[TAs]: Modified the sentence above.
 </div>
 
 __Q2. [10 marks]__ Examine the parallel data and answer the following questions.
@@ -193,7 +216,7 @@ over all possible words conditioned on the input sentence. We then choose
 the most probable word, output it, add it to the conditioning context, and
 repeat until the predicted word is an end-of-sentence token (`_EOS`).
 
-__Q4. [10 marks]__ Modify the decoder to _sample_ from the probability 
+__Q4. [10 marks]__ Modify the ```select_word``` function in the decoder to _sample_ from the probability 
 distribution at each time step, rather than returning the most probable word
 (this is a one-line change). Then sample a few translations for the dev data.
 These are alternatives to the one the decoder chooses. 
@@ -213,10 +236,7 @@ Implementing the modifications will not take you very long, but retraining
 the model will. 
 
 __NOTE__. I recommend that test your modifications by retraining
-on a small subset of the data (e.g. a thousand sentences). The results 
-will not be very good; your goal is simply to confirm that the change
-does not break the code and that it appears to behave sensibly. This is
-simply a sanity check, and a useful time-saving engineering test when
+on a small subset of the data (e.g. a thousand sentences). To do that, you should change the ```USE_ALL_DATA``` setting in ```nmt_config.py``` file to False. The results  will not be very good; your goal is simply to confirm that the change does not break the code and that it appears to behave sensibly. This is simply a sanity check, and a useful time-saving engineering test when
 you're working with computationally expensive models like neural MT.
 
 __Q5. [10 marks]__ Experiment with _one_ of the following changes to the
@@ -231,11 +251,38 @@ state the number you used.
 1. Change the number of hidden units by a substantial amount (e.g.
    by halving or doubling the number, not adding or subtracting one).
 
-<div class="alert alert-warning">
+To train a new model, you have to modify ```nmt_config.py``` with your required
+settings - the number of layers you wish to use, layer width, number of epochs and a name for your experiment.
+
+As an example, let's define a new model with the size of hidden units in the LSTM(s) as 100, and 2 layers for both the encoder and the decoder:
+```
+# number of LSTM layers for encoder
+num_layers_enc = 2
+# number of LSTM layers for decoder
+num_layers_dec = 2
+# number of hidden units per LSTM
+# both encoder, decoder are similarly structured
+hidden_units = 100
+```
+And set the number of epochs equal 1 or more (otherwise the model will not train):
+```
+# Training EPOCHS
+NUM_EPOCHS = 10
+```
+To start training a model with updated parameters execute the bash script:
+```
+./run_exp.bat 
+```
+After each epoch, the model file is saved to disk. The model file name includes the parameters used for training. As an example, with the above settings, the model and the log file names will be:
+```
+lamtran_ja_en_model_10500/seq2seq_10000sen_2-2layers_100units_{EXP_NAME}_NO_ATTN.model
+lamtran_ja_en_model_10500/train_10000sen_2-2layers_100units_{EXP_NAME}_NO_ATTN.log
+```
+<!-- <div class="alert alert-warning">
 TODO: there should be some explanatory text here that explains how to
 trigger retraining and how the models are named, what happens to the
 files, etc.
-</div>
+</div> -->
 
 __Q6. [10 marks]__ An important but simple technique for working with
 neural models is _dropout_, which must be applied in a particular way
@@ -271,10 +318,32 @@ __Q8. [10 marks]__ Retrain your decoder, and again explain how the change
 affects results compared to the baseline in terms of perplexity, BLEU, and
 the actual translations. 
 
+We provide a function, ```plot_attention``` to plot attention vectors. A plot will be generated and stored in the model directory. To do this set ```plot=True``` in the ```predict``` function.
+```
+_ = predict(s=10000, num=1, plot=True)
+
+```
+This will output a heatmap of the attention vectors and save the plot as ```lamtran_ja_en_data_10500/sample_10000_plot.png```
+
 <div class="alert alert-warning">
+TODO: Adam - We have added a sample image to the repo, can you display it in Markdown?
+</div>
+
+<!-- <div class="alert alert-warning">
 TODO: Explain here how to visualize the attention vectors. (e.g. what function
 to call.
-</div>
+
+****************FOR ADAM:
+We added the fonts folder to the github repo. Does this break any licensing clause?
+
+To support japanese font in matplotlib, we need to be download appropriate font types.
+We have downloaded 
+Refer to http://stackoverflow.com/questions/23197124/display-non-ascii-japanese-characters-in-pandas-plot-legend
+And download from:
+http://ipafont.ipa.go.jp/old/ipafont/download.html#en
+http://ipafont.ipa.go.jp/old/ipafont/IPAfont00303.php
+</div> -->
+
 
 __Q9. [10 marks]__ Visualize the evolution of the attention vectors for
 five decoded sentences, using the provided code. Do they seem reasonable?
