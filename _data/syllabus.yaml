@@ -133,8 +133,17 @@
   plan:
   - date: 2017-02-27
     header: 
-    - title: "Open-vocabulary language modeling"
+    - title: "Larg vocabulary language modeling"
       type: lecture
+    items:
+    - description: Lecture recording
+      url: https://ed.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=32903ff1-4ef7-4209-8f6d-0fc8ce0bd9f4
+    - description: Pragmatic neural language modelling in machine translation (Baltescu and Blunsom)
+      url: http://www.aclweb.org/anthology/N15-1083
+    - description: Strategies for training large vocabulary neural language models (Chen et al.)
+      url: http://www.aclweb.org/anthology/P16-1186
+    - description: "Finding function in form: Compositional character models for open vocabulary word representation (Ling et al.)" 
+      url: http://aclweb.org/anthology/D15-1176
   - date: 2017-03-02
     header: 
     - title: "Open-vocabulary translation modeling"

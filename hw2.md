@@ -112,6 +112,7 @@ Japanese-to-English neural translation model, and three python files:
    machine translation system works, at a level of detail that you can't get
    from lectures or reading.
    
+To get started, run the following commands:
 
     cd translate
     source activate mtenv
@@ -159,10 +160,13 @@ important to understand the baseline implementation, the data we run it on, and
 some of the techniques that are used to make the model run on this data.
 
 __Q1. [10 marks]__ The file `enc_dec.py` contains explanatory comments
-to step you through the code. Five of these comments are missing, but they
-are easy to find: search for the string `__QUESTION` in the file. For each
+to step you through the code. Five of these comments (A-E) are missing, 
+but they are easy to find: search for the string `__QUESTION` in the file. 
+A sixth comment (F) is missing from file `nmt_translate.py`. For each
 of these cases, please (1) add explanatory comments to the code, and (2)
-copy your comments to your answer file. If you aren't certain what a 
+copy your comments to your answer file (we will mark the comments in your
+answer file, not the code, so it is vital that they appear there). 
+If you aren't certain what a 
 a particular function does, refer to the [chainer documentation](http://docs.chainer.org/en/latest/).
 (However, explain the code in terms of its effect on the MT model; don't
 simply copy and paste function descriptions from the documentation).
@@ -186,7 +190,8 @@ __Q2. [10 marks]__ Examine the parallel data and answer the following questions.
    and unknown word handling? 
 
 __Q3. [10 marks]__
-What language phenomena might affect the severity of these effects?
+What language phenomena might influence the severity of these effects
+you observed above?
 Any claims you make must be supported by _evidence_, in the
 form of statistics, known facts about language, and/ or examples.
 Unsupported answers will receive a mark of zero!
@@ -206,8 +211,8 @@ repeat until the predicted word is an end-of-sentence token (`_EOS`).
 
 __Q4. [10 marks]__ Modify the ```select_word``` function in the decoder to _sample_ from the probability 
 distribution at each time step, rather than returning the most probable word
-(this is a one-line change). Then sample a few translations for the dev data.
-These are alternatives to the one the decoder chooses. 
+(this change should only require a few lines of code). Then sample a few 
+translations for the dev data. These are alternatives to the one the decoder chooses. 
 
 1. What conclusions can you draw about the translation model based on this
    sample? Remember to support your claims with _examples_.
@@ -303,7 +308,10 @@ and normalized) and the resulting distribution should be used to interpolate
 the input hidden states to produce a context vector used as additional
 input to the decoder.
 
-__Q7. [20 marks]__ Implement the attention model described above.
+__Q7. [20 marks]__ Implement the attention model described above. You 
+will find placeholders in the code to save the hidden states of the encoder
+and return an array of attention weights. Using this API will help ensure
+that your code works correctly.
 
 __Q8. [10 marks]__ Retrain your decoder, and again explain how the change
 affects results compared to the baseline in terms of perplexity, BLEU, and
@@ -402,7 +410,8 @@ Ground Rules
 
 * You must submit these files **and only these files**. 
     1. `answers.pdf`: A file containing your answers to Questions 1 through 
-       9 in an A4 PDF. Your file must be written in LaTeX using the overleaf template, 
+       9 in an A4 PDF. Your file **must** be written in LaTeX using the 
+       [overleaf template](https://www.overleaf.com/read/kfyrrhrwqvdn), 
        which you should clone and edit to provide your answers. Answers 
        provided in any other format will receive a mark of zero. Your 
        answers must not exceed three pages, so be concise. You are 
