@@ -133,7 +133,7 @@
   plan:
   - date: 2017-02-27
     header: 
-    - title: "Larg vocabulary language modeling"
+    - title: "Large vocabulary language modeling"
       type: lecture
     items:
     - description: Lecture recording
@@ -148,6 +148,25 @@
     header: 
     - title: "Open-vocabulary translation modeling"
       type: lecture
+  - date: 2017-03-02
+    header:
+    - title: "Large vocabulary translation modeling"
+      type: lecture
+    items:
+    - description: Lecture recording
+      url: "https://ed.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=251b278f-b5a8-4e56-abe3-1004669ce5cf"
+    - description: "On Using Very Large Target Vocabulary for Neural Machine Translation (Jean et al.)"
+      url: "http://www.aclweb.org/anthology/P15-1001"
+    - description: "Addressing the Rare Word Problem in Neural Machine Translation (Luong et al.)"
+      url: "http://www.aclweb.org/anthology/P15-1002"
+    - description: "Neural Machine Translation of Rare Words with Subword Units (Sennrich et al.)"
+      url: "http://www.aclweb.org/anthology/P16-1162"
+    - description: "Google's Neural Machine Translation System (Wu et al.)"
+      url: "https://arxiv.org/pdf/1609.08144.pdf"
+    - description: "Character-based Neural Machine Translation (Ling et al.)"
+      url: "https://arxiv.org/abs/1511.04586"
+    - description: "Fully Character-Level Neural Machine Translation without Explicit Segmentation (Lee et al.)"
+      url: "https://arxiv.org/abs/1610.03017"
 - name: Week 7
   plan:
   - date: 2017-03-06
@@ -160,14 +179,14 @@
       type: lab
   - date: 2017-03-09
     header:
-    - title: "Coursework 2 due at 4pm"
-      type: coursework
     - title: "Multi-source and zero-shot translation"
       type: lecture
 - name: Week 8
   plan:
   - date: 2017-03-13
     header: 
+    - title: "Coursework 2 due at 4pm"
+      type: coursework
     - title: "TBD"
       type: lecture
   - date: 2017
