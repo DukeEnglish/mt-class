@@ -257,7 +257,11 @@
       type: lecture
 - name: Week 11
   plan:
-  - date: 2017-04-06
+  - header:
+    - title: "No lectures or labs. Work on final coursework."
+- name: Week 12
+  plan:
+  - date: 2017-04-13
     header:
     - title: "Coursework 3 due at 4pm"
       type: coursework
