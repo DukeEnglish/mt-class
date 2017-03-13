@@ -216,19 +216,28 @@
       url: http://aclweb.org/anthology/D16-1026
     - description: "Google’s Multilingual Neural Machine Translation System: Enabling Zero-Shot Translation (Johnson et al.)"
       url: https://arxiv.org/pdf/1611.04558.pdf
-  - date: 2017
+  - date: 2017-03-
     header:
-    - title: "TBD"
+    - title: "Syntax and translation"
       type: lecture
+    items:
+    - description: "Bender, chapters 5--8"
 - name: Week 9
   plan:
   - date: 2017-03-20
     header:
-    - title: "Syntax"
+    - title: "Recurrent neural network grammars"
       type: lecture
+    items:
+    - description: "Recurrent neural network grammars (Dyer et al.)"
+      url: https://arxiv.org/abs/1602.07776
+    - description: "What Do Recurrent Neural Network Grammars Learn About Syntax? (Kuncoro et al.)"
+      url: https://arxiv.org/abs/1611.05774
+    - description: "Learning to parse and translate improves neural machine translation (Eriguchi et al.)"
+      url: https://arxiv.org/abs/1702.03525
   - date: 2017-03-23
     header:
-    - title: "Recurrent neural network grammar"
+    - title: "TBD"
       type: lecture
 - name: Week 10
   plan:
