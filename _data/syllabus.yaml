@@ -209,6 +209,13 @@
       type: coursework
     - title: "Multi-source and zero-shot translation"
       type: lecture
+    items:
+    - description: "Multi-Way, Multilingual Neural Machine Translation with a Shared Attention Mechanism (Firat et al.)"
+      url: http://www.aclweb.org/anthology/N16-1101
+    - description: "Zero-Resource Translation with Multi-Lingual Neural Machine Translation (Firat et al.)"
+      url: http://aclweb.org/anthology/D16-1026
+    - description: "Google’s Multilingual Neural Machine Translation System: Enabling Zero-Shot Translation (Johnson et al.)"
+      url: https://arxiv.org/pdf/1611.04558.pdf
   - date: 2017
     header:
     - title: "TBD"
