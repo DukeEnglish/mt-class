@@ -3,11 +3,9 @@ title: NMT | HW2
 active_tab: hw2 
 ---
 
-<div class="alert alert-info">
-This assignment is due at 16:00 GMT on 13 March, 2017. Late submissions will
-receive a mark of zero, under the 
-<a href="http://web.inf.ed.ac.uk/infweb/student-services/ito/admin/coursework-projects/late-coursework-extension-requests">Informatics late policy</a>.
-An assignment submitted at 16:01 GMT on 13 March is considered late.
+<div class="alert alert-warning">
+This assignment is over, unless you have an extension from the ITO.
+</div>
 
 Before you start, please read this page carefully. Submissions that do not
 follow the Ground Rules (at the bottom of the page)
