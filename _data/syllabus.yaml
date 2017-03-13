@@ -190,6 +190,17 @@
     header:
     - title: "Using monolingual data in NMT"
       type: lecture
+    items:
+    - description: "Lecture recording"
+      url: https://ed.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=ff8447c3-eb0c-4e82-b99a-af12ce57ce2c
+    - description: "On using monolingual corpora in neural machine translation (Gulcehre et al.)"
+      url: https://arxiv.org/abs/1503.03535
+    - description: "Improving Neural Machine Translation Models with Monolingual Data (Sennrich et al.)"
+      url: http://www.aclweb.org/anthology/P16-1009
+    - description: "Generalizing and Hybridizing Count-based and Neural Language Models (Neubig and Dyer)"
+      url: https://www.aclweb.org/anthology/D16-1124
+    - description: "Incorporating Discrete Translation Lexicons into Neural Machine Translation (Arthur et al.)"
+      url: https://www.aclweb.org/anthology/D16-1162
 - name: Week 8
   plan:
   - date: 2017-03-13
