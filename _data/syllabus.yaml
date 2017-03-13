@@ -210,6 +210,8 @@
     - title: "Multi-source and zero-shot translation"
       type: lecture
     items:
+    - description: Lecture recording
+      url: "https://ed.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e01583e7-dca3-4020-b994-45721c48f4ad#"
     - description: "Multi-Way, Multilingual Neural Machine Translation with a Shared Attention Mechanism (Firat et al.)"
       url: http://www.aclweb.org/anthology/N16-1101
     - description: "Zero-Resource Translation with Multi-Lingual Neural Machine Translation (Firat et al.)"
