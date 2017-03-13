@@ -171,15 +171,24 @@
   plan:
   - date: 2017-03-06
     header:
-    - title: "Exploiting non-parallel data"
+    - title: "Attention"
       type: lecture
+    items:
+    - description: "Lecture recording"
+      url: https://ed.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6c32b0b5-60ca-4f2c-8c76-340ade01ef62
+    - description: "Effective Approaches to Attention-based Neural Machine Translation (Luong et al.)"
+      url: http://www.aclweb.org/anthology/D15-1166
+    - description: "Incorporating Structural Alignment Biases into an Attentional Neural Translation Model (Cohn et al.)"
+      url: http://www.aclweb.org/anthology/N16-1102
+    - description: "[NEW!] Neural Machine Translation and Sequence-to-sequence Models: A Tutorial"
+      url: https://arxiv.org/pdf/1703.01619.pdf
   - date: 2017-03-07
     header:
     - title: "Coursework 2 support"
       type: lab
   - date: 2017-03-09
     header:
-    - title: "Multi-source and zero-shot translation"
+    - title: "Using monolingual data in NMT"
       type: lecture
 - name: Week 8
   plan:
@@ -187,7 +196,7 @@
     header: 
     - title: "Coursework 2 due at 4pm"
       type: coursework
-    - title: "TBD"
+    - title: "Multi-source and zero-shot translation"
       type: lecture
   - date: 2017
     header:
@@ -201,7 +210,7 @@
       type: lecture
   - date: 2017-03-23
     header:
-    - title: "Probabilistic models of syntax"
+    - title: "Recurrent neural network grammar"
       type: lecture
 - name: Week 10
   plan:
@@ -211,7 +220,7 @@
       type: lecture
   - date: 2017-03-28
     header:
-    - title: "TBD"
+    - title: "Coursework 3 support"
       type: lab
   - date: 2017-03-30
     header:
