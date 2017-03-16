@@ -223,7 +223,11 @@
     - title: "Syntax and translation"
       type: lecture
     items:
+    - description: Lecture recording
+      url: https://ed.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c01410db-5e3a-486a-9405-a27aa9647848
     - description: "Bender, chapters 5--8"
+    - description: "Phrasal cohesion and statistical machine translation (Fox 2002)"
+      url: https://www.aclweb.org/anthology/W02-1039
 - name: Week 9
   plan:
   - date: 2017-03-20
