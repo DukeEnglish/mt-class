@@ -266,6 +266,9 @@ the way. Concretely, your report should clearly convey:
 
 You should expect to write a concise scientific report. If you aren't
 sure what that looks like, look at some good training data (papers from the [syllabus](file:///Users/alopez/teaching/mt2017/website/mt-class/_site/syllabus.html)) or [read some advice](https://www.microsoft.com/en-us/research/academic-program/write-great-research-paper/).
+Note that (unlike with a dissertation) you don't need to extensively describe
+the general problem of MT or why you're working on it: obviously, that has
+been decided for you.
 
 Ground Rules
 ------------
@@ -288,6 +291,10 @@ Ground Rules
 * You must submit these files **and only these files**. 
     1. `report.pdf`: A file containing your writeup.    
     1. `translations.txt`: The output of your final system on the test set. 
+    1. `uuns.txt`: a text file containing the uuns of you and your partner.
+       **This is important: if your partner is the submitter, I have no other
+       way to identify you except through this file. I will not accept
+       updates to this file after the deadline.**
 
 * Your name __must not appear in any of the submitted files__. If your name
   appears in the code or pdf (or output) you will receive a mark of zero.
