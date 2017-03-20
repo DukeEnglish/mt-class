@@ -17,7 +17,7 @@ Before you start, please read this page carefully. Submissions that do not
 follow the Ground Rules will receive a mark of zero.
 </div>
 
-Amisuuvut pijariatujut saqqiniaqtut sivuniksami <small>| Coursework 3</small>
+ᐊᒥᓲᕗᑦ ᐱᔭᕆᐊᑐᔪᑦ ᓴᖅᑭᓂᐊᖅᑐᑦ ᓯᕗᓂᒃᓴᒥ <small>| Coursework 3</small>
 ==========================
 
 From its beginnings, one of the attractions of statistical machine 
@@ -27,7 +27,7 @@ in a very brief period of time,
 All that is required is a parallel text. This is now reality: since its 
 [initial launch almost eleven years ago](https://research.googleblog.com/2006/04/statistical-machine-translation-live.html)
 Google Translate has grown to support 10,506 language pairs, meaning that 
-on average, new language pairs are added at frequency of once every nine
+on average, new language pairs are added at a frequency of once every nine
 hours.
 
 This capability is useful for more than users of free translation services. In some situations,
@@ -121,6 +121,16 @@ for [coursework 2](hw2.html). This time, we've provided you with a complete
 encoder-decoder model with our own implementation of attention.  We've also provided you
 with some pretrained models on the two language pairs, so you can experiment 
 with them to see how they behave out of the box. 
+
+There is one small thing you must do before you can use the Inuktitut model, which was
+slightly too big for github. In the directory `in_en_model_50000`, run this command:
+
+    cat seq2seq_50000sen_3-3layers_200units_baseline_aajuq_SOFT_ATTN_PART1.model seq2seq_50000sen_3-3layers_200units_baseline_aajuq_SOFT_ATTN_PART2.model > seq2seq_50000sen_3-3layers_200units_baseline_aajuq_SOFT_ATTN.model
+    rm *PART*
+
+Our new implementation includes a script `prepare_seq2seq.py` with some 
+utility functions that may be useful if your experiments require changing
+the way the input data is preprocessed.
 
 You are not required to
 use our implementation: you may use your own implementation or a third-party 
@@ -252,7 +262,8 @@ they convince you that your implementation is correct, they might convince us, t
 Just as in the real world, there are no right or wrong answers to this
 coursework. It asks you look at a problem and make progress on it, to synthesize
 what you have learned and to clearly explain your reasoning at every step along
-the way. Concretely, your report should clearly convey:
+the way, [as is expected in a level 11 course](http://scqf.org.uk/wp-content/uploads/2014/03/SCQF-Revised-Level-Descriptors-Aug-2012-FINAL-web-version1.pdf).
+Concretely, your report should clearly convey:
 
 * **[20 marks] A research question.** As discussed above, this question should be motivated by 
   an analysis of what you find in the baseline systems, and should be supported with
@@ -264,7 +275,10 @@ the way. Concretely, your report should clearly convey:
   approach works. I recommend using the first two levels in [Marr's level of
   analysis](https://en.wikipedia.org/wiki/David_Marr_(neuroscientist)#Levels_of_analysis):
   a mathematical/ algorithmic description is preferable to code or a 
-  textual description of code. 
+  textual description of code. Keep in mind a complete description of your 
+  methods should include parameters of network architectures (e.g. embedding
+  dimensions) and learning algorithms (e.g. initialization, learning rates,
+  number of epochs or stopping criterion).
 
 * **[40 marks] Results and analysis.** What are your results? What do you
   conclude from them? What further things might you try based on what you've
@@ -300,18 +314,26 @@ Ground Rules
   skills to your own. But choose your partner wisely: if you submit
   as a pair, you agree to receive the same mark for your work. I refuse
   to adjudicate [Rashomon](https://en.wikipedia.org/wiki/Rashomon)-style
-  stories about who did or did not contribute.
+  stories about who did or did not contribute. If you would like a partner
+  but have no one in mind, you can search for a partner on 
+  [piazza](https://piazza.com/class/irvzfyo9ahs6mi#).
+  
+  Once you have agreed to work with a partner, you **must** 
+  [email me with "5636915" in the subject line](mailto:alopez@inf.ed.ac.uk?subject=5636915),
+  copying your partner. Please include both UUNs in the body of the email. I 
+  will then know that a submission received from either UUN should be marked
+  on behalf of both you and your partner. **You may not change partners
+  after you have emailed me.** This means that your email consistutes an
+  agreement to the parameters outlined above. It
+  will also help us predict marking load, which may mean you get your 
+  results faster. **I will ignore emails received after the deadline.**
 
 * You must submit these files **and only these files**. 
     1. `report.pdf`: A file containing your writeup.    
     1. `translations.txt`: The output of your final system on the test set. 
-    1. `uuns.txt`: a text file containing the uuns of you and your partner.
-       **This is important: if your partner is the submitter, I have no other
-       way to identify you except through this file. I will not accept
-       updates to this file after the deadline.**
 
-* Your name __must not appear in any of the submitted files__. If your name
-  appears in the code or pdf (or output) you will receive a mark of zero.
+* Your name(s) __must not appear in any of the submitted files__. If your name
+  appears in either file you will (both) receive a mark of zero.
 
 To submit your files on dice, run:
 
