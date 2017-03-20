@@ -235,6 +235,8 @@
     - title: "Recurrent neural network grammars"
       type: lecture
     items:
+    - description: Lecture recording
+      url: https://ed.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=03e18851-c1ed-4f3f-bd86-36a808b15b51
     - description: "Recurrent neural network grammars (Dyer et al.)"
       url: https://arxiv.org/abs/1602.07776
     - description: "What Do Recurrent Neural Network Grammars Learn About Syntax? (Kuncoro et al.)"
