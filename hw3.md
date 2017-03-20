@@ -180,6 +180,20 @@ help you received, and clearly identify what is and is not your own work.
 Report guidance
 ---------------
 
+**What to work on.** Most topics that draw on knowledge of language and
+modeling language with neural networks are fair game. For example, in class
+we talked about large-vocabulary models and their interaction with morphology,
+different approaches to attention, using monolingual data, and syntactic 
+models. The associated readings for these lectures on 
+[the syllabus](syllabus.html) are a good starting point for learning about
+current approaches. However, neural machine translation is a very active
+research area and you may find other inspiration from 
+[Google scholar](https://scholar.google.co.uk/scholar?q=neural+machine+translation).
+As noted above, we prefer that you don't focus experiments on the effect
+of adding more data (we know that will make the numbers go up, but what do
+we learn from it?) and comparison of implementations (this tells us who
+is a better engineer, not which ideas are most useful for these languages).
+
 Whatever you do, 
 your report should justify your choice of approach using evidence in the form
 of empirical observations about the baseline system, knowledge of language 
@@ -308,7 +322,14 @@ To submit your files on dice, run:
 This assignment was developed by
 [Ida Szubert](https://www.inf.ed.ac.uk/people/staff/Katarzyna_Szubert.html)
 and [Sameer Bansal](https://0xsameer.github.io/),
-with intermittent disruptions from [Adam Lopez](https://alopez.github.io/),
-who introduced all of the errors.
+with helpful comments from 
+[Nikolay Bogoychev](http://homepages.inf.ed.ac.uk/s1031254/),
+[Anny Currey](http://homepages.inf.ed.ac.uk/s1639783/), 
+[Soňa Galovičová](http://homepages.inf.ed.ac.uk/s1206522/),
+[Jonathan Mallinson](http://homepages.inf.ed.ac.uk/s1564225/),
+and
+[Joana Ribeiro](https://www.inf.ed.ac.uk/people/students/Joana_Ribeiro.html).
+[Adam Lopez](https://alopez.github.io/)
+added all of the errors.
 
 ### Footnotes
