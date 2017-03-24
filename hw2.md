@@ -4,12 +4,7 @@ active_tab: hw2
 ---
 
 <div class="alert alert-warning">
-This assignment is over, unless you have an extension from the ITO.
-</div>
-
-Before you start, please read this page carefully. Submissions that do not
-follow the Ground Rules (at the bottom of the page)
-will receive a mark of zero.
+This assignment is over!
 </div>
 
 Neural machine translation <small>| Coursework 2</small>

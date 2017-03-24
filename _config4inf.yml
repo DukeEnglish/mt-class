@@ -1,4 +1,4 @@
-exclude: ['README.md', 'stack-decoder', '2-alignment-code']
+exclude: ['README.md', 'stack-decoder', '2-alignment-code', 'syllabus2016']
 timezone: GMT
 markdown: kramdown
 destination: ../inf-mt

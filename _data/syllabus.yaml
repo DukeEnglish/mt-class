@@ -145,10 +145,6 @@
     - description: "Finding function in form: Compositional character models for open vocabulary word representation (Ling et al.)" 
       url: http://aclweb.org/anthology/D15-1176
   - date: 2017-03-02
-    header: 
-    - title: "Open-vocabulary translation modeling"
-      type: lecture
-  - date: 2017-03-02
     header:
     - title: "Large vocabulary translation modeling"
       type: lecture
@@ -218,7 +214,7 @@
       url: http://aclweb.org/anthology/D16-1026
     - description: "Google’s Multilingual Neural Machine Translation System: Enabling Zero-Shot Translation (Johnson et al.)"
       url: https://arxiv.org/pdf/1611.04558.pdf
-  - date: 2017-03-
+  - date: 2017-03-16
     header:
     - title: "Syntax and translation"
       type: lecture
@@ -226,7 +222,7 @@
     - description: Lecture recording
       url: https://ed.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c01410db-5e3a-486a-9405-a27aa9647848
     - description: "Bender, chapters 5--8"
-    - description: "Phrasal cohesion and statistical machine translation (Fox 2002)"
+    - description: "Phrasal cohesion and statistical machine translation (Fox)"
       url: https://www.aclweb.org/anthology/W02-1039
 - name: Week 9
   plan:
@@ -245,14 +241,29 @@
       url: https://arxiv.org/abs/1702.03525
   - date: 2017-03-23
     header:
-    - title: "TBD"
+    - title: "Minimum risk training and evaluation revisited"
       type: lecture
+    items:
+    - description: Lecture recording
+      url: https://ed.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0535cef5-ad27-4c24-a656-1f07ecb69a16
+    - description: "Minimum Risk Training for Neural Machine Translation (Shen et al.)"
+      url: http://www.aclweb.org/anthology/P16-1159
+    - description: "How grammatical is character-level neural machine translation? Assessing MT quality with contrastive translation pairs (Sennrich)"
+      url: https://arxiv.org/abs/1612.04629
 - name: Week 10
   plan:
   - date: 2017-03-27
     header:
     - title: "Decipherment"
       type: lecture
+    items:
+    - description: Lecture recording (available Mar 27)
+    - description: "Large scale decipherment for out-of-domain machine translation (Dou and Knight)"
+      url: http://www.aclweb.org/anthology/D12-1025
+    - description: "The Copiale Cipher (Knight et al.)"
+      url: http://www.aclweb.org/anthology/W11-1202
+    - description: "What we know about the Voynich manuscript (Reddy and Knight)"
+      url: http://www.anthology.aclweb.org/W11-1511
   - date: 2017-03-28
     header:
     - title: "Coursework 3 support"
@@ -261,6 +272,16 @@
     header:
     - title: "History (final lecture)"
       type: lecture
+    items:
+    - description: Lecture recording (available Mar 30)
+    - description: "The dawn of statistical ASR and MT (Jelinek)"
+      url: http://aclweb.org/anthology/J09-4004
+    - description: "Fred Jelinek (Liberman)"
+      url: http://aclweb.org/anthology/J10-4001
+    - description: "Oh yes, everything's right on schedule, Fred (Brown and Mercer)"
+      url: http://cs.jhu.edu/~post/bitext/
+    - description: "The Great A.I. Awakening (Lewis-Kraus, NY Times Magazine)"
+      url: https://www.nytimes.com/2016/12/14/magazine/the-great-ai-awakening.html
 - name: Week 11
   plan:
   - header:

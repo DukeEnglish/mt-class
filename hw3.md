@@ -114,7 +114,7 @@ Code, data, and other resources
 
 First, get code and data that we have provided.
 
-    git clone https://github.com/INFR11133/hw2.git
+    git clone https://github.com/INFR11133/hw3.git
 
 The layout of the code and data is identical to what you received 
 for [coursework 2](hw2.html). This time, we've provided you with a complete
@@ -244,6 +244,31 @@ should do so only if it makes sense in the context of your project; your
 marks will depend on the quality and depth of your report, not which 
 language you use.
 
+The assignment has been designed with the intention that you work on translation
+into English, and all of the baselines and choice of measures assume this.
+However, you are permitted to work on translation out of English if you 
+prefer. This will reveal many problems that are just as interesting as the
+ones you would find by translating into English, but it will also be more
+difficult for a few reasons:
+
+* For all their warts, metrics like BLEU have some utility when English is
+  the target, but BLEU is especially poor for Hungarian and Inuktitut. Can
+  you see why? If you choose to translate out of English, you will need to
+  think especially carefully about evaluation, and choose or even invent
+  new measures.
+
+* It is very helpful to be able to read the output of your system.
+
+* In your report, you must be able to convey ideas to your readers using
+  examples. You can certainly do this if the target language is not English;
+  I recommend that you use [interlinear glosses](https://www.eva.mpg.de/lingua/resources/glossing-rules.php)
+  for all examples, irrespective of target language. However, finding good
+  examples and analyzing them may be difficult if you can't read the
+  language.
+
+These facts make translation out of English more challenging, but if you
+feel prepared for that challenge, forge ahead!
+
 **Sanity checking.** It's often difficult to know 
 whether poor results of a machine learning system are due to model error, search
 error, or implementation error. To get good at it, you should get in the habit
@@ -316,13 +341,15 @@ Ground Rules
   to adjudicate [Rashomon](https://en.wikipedia.org/wiki/Rashomon)-style
   stories about who did or did not contribute. If you would like a partner
   but have no one in mind, you can search for a partner on 
-  [piazza](https://piazza.com/class/irvzfyo9ahs6mi#).
+  [piazza](https://piazza.com/class/irvzfyo9ahs6mi#). You are only permitted
+  to work with one other person; groups of three or more are not allowed.
   
   Once you have agreed to work with a partner, you **must** 
-  [email me with "5636915" in the subject line](mailto:alopez@inf.ed.ac.uk?subject=5636915),
-  copying your partner. Please include both UUNs in the body of the email. I 
+  [email me with "5636915" in the subject line](mailto:alopez@inf.ed.ac.uk?subject=5636915).
+  **Please copy your partner on this email**, and include both UUNs in the body of the email. I 
   will then know that a submission received from either UUN should be marked
-  on behalf of both you and your partner. **You may not change partners
+  on behalf of both you and your partner, and you should submit your joint
+  report from only **one** of these UUNs. **You may not change partners
   after you have emailed me.** This means that your email consistutes an
   agreement to the parameters outlined above. It
   will also help us predict marking load, which may mean you get your 
