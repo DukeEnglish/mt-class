@@ -122,12 +122,6 @@ encoder-decoder model with our own implementation of attention.  We've also prov
 with some pretrained models on the two language pairs, so you can experiment 
 with them to see how they behave out of the box. 
 
-There is one small thing you must do before you can use the Inuktitut model, which was
-slightly too big for github. In the directory `in_en_model_50000`, run this command:
-
-    cat seq2seq_50000sen_3-3layers_200units_baseline_aajuq_SOFT_ATTN_PART1.model seq2seq_50000sen_3-3layers_200units_baseline_aajuq_SOFT_ATTN_PART2.model > seq2seq_50000sen_3-3layers_200units_baseline_aajuq_SOFT_ATTN.model
-    rm *PART*
-
 Our new implementation includes a script `prepare_seq2seq.py` with some 
 utility functions that may be useful if your experiments require changing
 the way the input data is preprocessed.
@@ -183,8 +177,11 @@ see below), **you are encouraged** to share knowledge and information on
 [the piazza forum](https://piazza.com/class/irvzfyo9ahs6mi), up to an including 
 things that you learn about languages, software, and data during the course of 
 completing the assignment. This isn't a competition, and you will learn more by
-asking and answering questions. Your report should correctly acknowledge any
-help you received, and clearly identify what is and is not your own work. 
+asking and answering questions. But **your report must be written in your own
+words and should correctly acknowledge any
+help you received, clearly identifying what is and is not your own work.** 
+Please respect the University's [guidance on plagiarism](http://www.ed.ac.uk/academic-services/students/conduct/academic-misconduct/plagiarism).
+We will take evidence of plagiarism very seriously.
 
 
 Report guidance
