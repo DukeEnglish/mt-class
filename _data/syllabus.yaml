@@ -257,7 +257,8 @@
     - title: "Decipherment"
       type: lecture
     items:
-    - description: Lecture recording (available Mar 27)
+    - description: Lecture recording 
+      url: https://ed.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0663c0c8-06e3-43d9-9f22-5a6a8571b0b7
     - description: "Large scale decipherment for out-of-domain machine translation (Dou and Knight)"
       url: http://www.aclweb.org/anthology/D12-1025
     - description: "The Copiale Cipher (Knight et al.)"
