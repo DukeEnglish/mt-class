@@ -274,7 +274,8 @@
     - title: "History (final lecture)"
       type: lecture
     items:
-    - description: Lecture recording (available Mar 30)
+    - description: Lecture recording
+      url: https://ed.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=988abd97-e710-41ce-9fcf-0f54791add65
     - description: "The dawn of statistical ASR and MT (Jelinek)"
       url: http://aclweb.org/anthology/J09-4004
     - description: "Fred Jelinek (Liberman)"

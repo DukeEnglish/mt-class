@@ -3,10 +3,6 @@ title: NMT | HW2
 active_tab: hw2 
 ---
 
-<div class="alert alert-warning">
-This assignment is over!
-</div>
-
 Neural machine translation <small>| Coursework 2</small>
 --------------------------------------------------------
 

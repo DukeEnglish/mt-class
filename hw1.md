@@ -6,12 +6,6 @@ title: Decoding | Homework 1
 active_tab: hw1 
 ---
 
-<div class="alert alert-warning">
-This assignment is over!
-</div>
-
-
-
 Decoding <small>| Coursework 1</small>
 ------------------------------------
 

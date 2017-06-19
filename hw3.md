@@ -3,20 +3,6 @@ title: MT HW3
 active_tab: hw3 
 ---
 
-<div class="alert alert-info">
-This assignment is due at 4pm on Thursday, 13 April. Late submissions
-will receive a mark of zero in accordance with the
-<a href="http://web.inf.ed.ac.uk/infweb/student-services/ito/admin/coursework-projects/late-coursework-extension-requests">school-wide late policy</a>.
-Submissions received at 4:01pm on the due date will be considered late.
-If you require an extension, contact the ITO. I am not empowered to
-grant extensions and will ignore any request to do so. Circumstances
-under which the ITO will grant an extension are clearly described in
-the late policy.
-
-Before you start, please read this page carefully. Submissions that do not
-follow the Ground Rules will receive a mark of zero.
-</div>
-
 ᐊᒥᓲᕗᑦ ᐱᔭᕆᐊᑐᔪᑦ ᓴᖅᑭᓂᐊᖅᑐᑦ ᓯᕗᓂᒃᓴᒥ <small>| Coursework 3</small>
 ==========================
 
