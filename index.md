@@ -6,6 +6,11 @@ title: Machine translation
 active_tab: main_page 
 ---
 
+<div class="alert alert-info">
+  The information on this page is for the 2017 offering of the course.
+  The 2018 offering will differ in several aspects. 
+</div>
+
 #### Course Description
 
 [Google translate](http://translate.google.com/) instantly
