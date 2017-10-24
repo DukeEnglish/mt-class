@@ -6,9 +6,13 @@ title: Machine translation
 active_tab: main_page 
 ---
 
-<div class="alert alert-info">
-  The information on this page is for the 2017 offering of the course.
-  The 2018 offering will differ in several aspects. 
+<div class="alert alert-danger">
+  This page is for the 2017 version of this course, and it is here for 
+  archival purposes. If you are a student at the University of Edinburgh
+  taking the machine translation course, please refer to the
+  <a href="http://www.inf.ed.ac.uk/teaching/courses/mt/">Official
+  University page for the course</a>. The material on this page does
+  not reflect the current course content.
 </div>
 
 #### Course Description
